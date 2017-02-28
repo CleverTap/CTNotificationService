@@ -1,6 +1,9 @@
 
 #import "CTNotificationServiceExtension.h"
 
+static NSString * const kMediaUrlKey = @"ct_mediaUrl";
+static NSString * const kMediaTypeKey = @"ct_mediaType";
+
 @interface CTNotificationServiceExtension()
 
 @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
@@ -21,10 +24,23 @@
         return;
     }
     
-    NSString *mediaUrl = userInfo[@"mediaUrl"];
-    NSString *mediaType = userInfo[@"mediaType"];
+    NSString *mediaUrlKey = self.mediaUrlKey ? self.mediaUrlKey : kMediaUrlKey;
+    NSString *mediaTypeKey = self.mediaTypeKey ? self.mediaTypeKey : kMediaTypeKey;
+    
+    NSString *mediaUrl = userInfo[mediaUrlKey];
+    NSString *mediaType = userInfo[mediaTypeKey];
     
     if (mediaUrl == nil || mediaType == nil) {
+#ifdef DEBUG
+        if (mediaUrl == nil) {
+             NSLog(@"unable to add attachment: %@ is nil", mediaUrlKey);
+        }
+        
+        if (mediaType == nil) {
+            NSLog(@"unable to add attachment: %@ is nil", mediaTypeKey);
+        }
+       
+#endif
         [self contentComplete];
         return;
     }
@@ -42,8 +58,6 @@
 }
 
 - (void)serviceExtensionTimeWillExpire {
-    // Called just before the extension will be terminated by the system.
-    // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
     [self contentComplete];
 }
 
@@ -80,7 +94,9 @@
     [[session downloadTaskWithURL:attachmentURL
                 completionHandler:^(NSURL *temporaryFileLocation, NSURLResponse *response, NSError *error) {
                     if (error != nil) {
-                        NSLog(@"%@", error.localizedDescription);
+                        #ifdef DEBUG
+                        NSLog(@"unable to add attachment: %@", error.localizedDescription);
+                        #endif
                     } else {
                         NSFileManager *fileManager = [NSFileManager defaultManager];
                         NSURL *localURL = [NSURL fileURLWithPath:[temporaryFileLocation.path stringByAppendingString:fileExt]];
@@ -89,7 +105,9 @@
                         NSError *attachmentError = nil;
                         attachment = [UNNotificationAttachment attachmentWithIdentifier:@"" URL:localURL options:nil error:&attachmentError];
                         if (attachmentError) {
-                            NSLog(@"%@", attachmentError.localizedDescription);
+                            #ifdef DEBUG
+                            NSLog(@"unable to add attchment: %@", attachmentError.localizedDescription);
+                            #endif
                         }
                     }
                     completionHandler(attachment);

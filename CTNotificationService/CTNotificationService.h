@@ -1,5 +1,4 @@
 
-#import <UIKit/UIKit.h>
 
 //! Project version number for CTNotificationService.
 FOUNDATION_EXPORT double CTNotificationServiceVersionNumber;
