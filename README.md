@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![Platform](https://img.shields.io/cocoapods/p/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 
-### A simple UNNotificationServiceExtension to add media attachments to iOS 10 push notifications
+### A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications
 
 Starting with iOS 10 you can add media attachments (image, gif, video, audio) to iOS push notifications.  This library provides a simple drop-in class to accomplish that.
 
