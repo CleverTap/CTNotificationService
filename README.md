@@ -17,9 +17,8 @@ Create a Notification Service Extension in your project. To do that in your Xcod
 
 ### Install CTNotificationService in your Notification Service Extension via [CocoaPods](http://cocoapods.org)
 
-   Your Podfile should look something like this:
+Your Podfile should look something like this:
 
-    ```
     source 'https://github.com/CocoaPods/Specs.git'
     platform :ios, '10.0'
 
@@ -28,11 +27,10 @@ Create a Notification Service Extension in your project. To do that in your Xcod
     target 'YOUR_NOTIFICATION_SERVICE_TARGET_NAME' do  
         pod 'CTNotificationService'  
     end     
-    ```
 
-    Then run `pod install`.
+Then run `pod install`.
 
-    [See example Podfile here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/Podfile)
+[See example Podfile here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/Podfile)
 
 ### Configure your Notification Service Extension to use the CTNotificationServiceExtension class
 
