@@ -4,6 +4,10 @@
 static NSString * const kMediaUrlKey = @"ct_mediaUrl";
 static NSString * const kMediaTypeKey = @"ct_mediaType";
 
+static NSString * const kImage = @"image";
+static NSString * const kVideo = @"video";
+static NSString * const kAudio = @"audio";
+
 @interface CTNotificationServiceExtension()
 
 @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
@@ -68,15 +72,15 @@ static NSString * const kMediaTypeKey = @"ct_mediaType";
 - (NSString *)fileExtensionForMediaType:(NSString *)type {
     NSString *ext = type;
     
-    if ([type isEqualToString:@"image"]) {
+    if ([type isEqualToString:kImage]) {
         ext = @"jpg";
     }
     
-    if ([type isEqualToString:@"video"]) {
+    if ([type isEqualToString:kVideo]) {
         ext = @"mp4";
     }
     
-    if ([type isEqualToString:@"audio"]) {
+    if ([type isEqualToString:kAudio]) {
         ext = @"mp3";
     }
     
