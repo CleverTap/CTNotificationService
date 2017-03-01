@@ -30,15 +30,15 @@ Your Podfile should look something like this:
 
 Then run `pod install`.
 
-[See example Podfile here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/Podfile)
+[See example Podfile here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/Podfile).
 
 ### Configure your Notification Service Extension to use the CTNotificationServiceExtension class
 
 By default CTNotificatonServiceExtension will look for the push payload key `ct_mediaUrl` with a value representing the url to your media file and the key `ct_mediaType` with a value of the type of media (image, video, audio or gif).
 
-If you are happy with the default key names, you can simply insert `CTNotificationServiceExtension` in place of your extension class name as the value for the NSExtension -> NSExtensionPrincipalClass entry in your Notfication Service Extension target Info.plist.  [See example here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/NotificationService/Info.plist) 
+If you are happy with the default key names, you can simply insert `CTNotificationServiceExtension` in place of your extension class name as the value for the NSExtension -> NSExtensionPrincipalClass entry in your Notfication Service Extension target Info.plist.  [See example here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/NotificationService/Info.plist). 
 
-Alternatively, you can leave the NSExtensionPrincipalClass entry unchanged and instead have your NotificationService class extend the CTNotificationServiceExtension class. You can then also override the defaults to your chosen key names if you wish. [See Swift example here](https://github.com/CleverTap/CTNotificationService/blob/master/ExampleSwift/NotificationService/NotificationService.swift) and [Objective-C example here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/NotificationService/NotificationService.m). In that case, only override `didReceive request: contentHandler:` as shown in the example.
+Alternatively, you can leave the NSExtensionPrincipalClass entry unchanged and instead have your NotificationService class extend the CTNotificationServiceExtension class. You can then also override the defaults to your chosen key names if you wish. [See Swift example here](https://github.com/CleverTap/CTNotificationService/blob/master/ExampleSwift/NotificationService/NotificationService.swift) and [Objective-C example here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/NotificationService). In that case, only override `didReceive request: contentHandler:` as shown in the example.
 
 If you plan on downloading non-SSL urls please be sure to enable App Transport Security Settings -> Allow Arbitrary Loads -> true in your plist.  [See plist example here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/NotificationService/Info.plist).  
 
