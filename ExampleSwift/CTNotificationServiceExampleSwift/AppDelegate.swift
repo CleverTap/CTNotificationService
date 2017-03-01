@@ -11,7 +11,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        CleverTap.setDebugLevel(1277182231)
         CleverTap.autoIntegrate()
 
         // register for push notifications

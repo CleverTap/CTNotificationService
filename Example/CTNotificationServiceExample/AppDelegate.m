@@ -12,7 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [CleverTap setDebugLevel:1277182231];
     [CleverTap autoIntegrate];
     [self registerPush];
     

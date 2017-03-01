@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		079DADACD6B6E3152BBE8D752F69B5C1 /* Pods-CTNotificationServiceExampleSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FB6F6070D727B9FE515E5FF0177837 /* Pods-CTNotificationServiceExampleSwift-dummy.m */; };
+		1DDF0CB97D4C3A160A5DDD53BCC2267A /* CTNotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C6A618BAB0C0B7EEE6D47B64C75F72 /* CTNotificationService-dummy.m */; };
 		5B9EF720E18A727DBF7618EFE1DAC2B7 /* Pods-CTNotificationServiceExampleSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 624B061A0C295C41A85AEFC37B9BE0C8 /* Pods-CTNotificationServiceExampleSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7190D1BF9187E2B6F135477918A2FFA4 /* Pods-NotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB7E74E133F338EE391ECA124467007 /* Pods-NotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73BD0AF8389897D6A6371A1D0A1CCFDE /* CTNotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1D42C24AEEEEA53B7B47497AC4D041 /* CTNotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF0B7290FC2C9BDEFFC316334AA27C46 /* CTNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A74AB7C773E0D35F3AF480A13E458D0 /* CTNotificationServiceExtension.m */; };
+		86FA66A4523E603E1F2CE94D8BCB25D5 /* CTNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0440E091B07A25BD04FA4F64ADFDAB /* CTNotificationServiceExtension.m */; };
 		B5ADD55E607235C3FE8FB51CB1CA840B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		B8D4CC06B90686E0EEE3AB457E1AAD39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BFDF9EC98D171DF43AFEA678289EC368 /* CTNotificationServiceExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D422F9578F3C99FC51148A5C908181B /* CTNotificationServiceExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E93CD3AE30A3C17FFD2BF50ACFBB12 /* CTNotificationService.h in Headers */ = {isa = PBXBuildFile; fileRef = D66DDF5A7AFA4665DD9C5F17C6140270 /* CTNotificationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB644AEA5FD47A94A31F763696DA2552 /* Pods-NotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDC429D84EF3731119D302395723D0C /* Pods-NotificationService-dummy.m */; };
+		DBEFAFA6145F1C059774E1302B38526E /* CTNotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D57FD6C87DE72F18BC509FC4E24B1F /* CTNotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E859BD0B7835A56E38A28C07D587CE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		EACB1A89D6213FA7ABE13397A4B6AC45 /* CTNotificationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 67B693A4709ABB9F85ABB1301325E090 /* CTNotificationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED5CEB0686E1BF7645253A2930D0AB14 /* CTNotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CD442894EE556AA5A4D1F1D4D59A59 /* CTNotificationService-dummy.m */; };
-		F1933BB5B98D47D1D8800C36D4855EC3 /* CTNotificationServiceExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 385D9E1E8735931CF4BEE813141FC9A0 /* CTNotificationServiceExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,44 +39,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0440E091B07A25BD04FA4F64ADFDAB /* CTNotificationServiceExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTNotificationServiceExtension.m; path = CTNotificationService/CTNotificationServiceExtension.m; sourceTree = "<group>"; };
+		14B33184A4368DE67C0B5A784455F778 /* CleverTapBuildInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapBuildInfo.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapBuildInfo.h; sourceTree = "<group>"; };
+		1835922EC101A1329A917BD49A1589C4 /* CleverTapUTMDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapUTMDetail.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapUTMDetail.h; sourceTree = "<group>"; };
 		19CAD54264F2DDA71004401FB0B13EEC /* CTNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CTNotificationService.framework; path = CTNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EE93051B3E59FA3B84AA7902DF580CB /* CleverTapUTMDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapUTMDetail.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapUTMDetail.h; sourceTree = "<group>"; };
 		2151CE3A484B1CFA1B093C19196F4919 /* Pods-CTNotificationServiceExampleSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTNotificationServiceExampleSwift-resources.sh"; sourceTree = "<group>"; };
 		21C88109E8D607808E678AEFC9CADDC4 /* Pods-CTNotificationServiceExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTNotificationServiceExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		2425662890745F8CD3ED93BD48B5BE3A /* Pods-CTNotificationServiceExampleSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTNotificationServiceExampleSwift-frameworks.sh"; sourceTree = "<group>"; };
-		3256D0E272915B9EC3BD32574CFB5CD4 /* CleverTapInAppNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapInAppNotificationDelegate.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapInAppNotificationDelegate.h; sourceTree = "<group>"; };
-		385D9E1E8735931CF4BEE813141FC9A0 /* CTNotificationServiceExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTNotificationServiceExtension.h; sourceTree = "<group>"; };
-		3A74AB7C773E0D35F3AF480A13E458D0 /* CTNotificationServiceExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTNotificationServiceExtension.m; sourceTree = "<group>"; };
+		26C6A618BAB0C0B7EEE6D47B64C75F72 /* CTNotificationService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTNotificationService-dummy.m"; sourceTree = "<group>"; };
+		2C83127825372EBD2599ACFB0923A0C9 /* CTNotificationService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTNotificationService.xcconfig; sourceTree = "<group>"; };
+		34E0E655A47ADF75F2FA2FAB8AB17AEE /* CTNotificationService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CTNotificationService.modulemap; sourceTree = "<group>"; };
 		3DE2C86ED47730133DDE0B7B3701DD7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46A4D2AEBB7A70C19202A51F788C868D /* Pods-CTNotificationServiceExampleSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTNotificationServiceExampleSwift-acknowledgements.plist"; sourceTree = "<group>"; };
-		549D95ACD8DA252844F7686A0293A2D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B1D14953F661C5E3B50E2D190D26D5B /* Pods-CTNotificationServiceExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTNotificationServiceExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		5C1D42C24AEEEEA53B7B47497AC4D041 /* CTNotificationService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTNotificationService-umbrella.h"; sourceTree = "<group>"; };
 		5F9E4AE527CED7084B6FCCC50979D3F4 /* Pods-NotificationService-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotificationService-acknowledgements.markdown"; sourceTree = "<group>"; };
 		60FB6F6070D727B9FE515E5FF0177837 /* Pods-CTNotificationServiceExampleSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTNotificationServiceExampleSwift-dummy.m"; sourceTree = "<group>"; };
 		624B061A0C295C41A85AEFC37B9BE0C8 /* Pods-CTNotificationServiceExampleSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CTNotificationServiceExampleSwift-umbrella.h"; sourceTree = "<group>"; };
-		63CD442894EE556AA5A4D1F1D4D59A59 /* CTNotificationService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTNotificationService-dummy.m"; sourceTree = "<group>"; };
-		67B693A4709ABB9F85ABB1301325E090 /* CTNotificationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTNotificationService.h; sourceTree = "<group>"; };
+		684F84AB541EA919ED4D559355B6A3C0 /* CleverTapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleverTapSDK.framework; sourceTree = "<group>"; };
 		697DE34A8B2B7B26DFEBB6E664681A2E /* Pods-CTNotificationServiceExampleSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTNotificationServiceExampleSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6E0ECFCDC72623CAC5ABAE7C305DCCB6 /* CTNotificationService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTNotificationService.xcconfig; sourceTree = "<group>"; };
-		768AE1DFDEED58B2DA46A770FC5C1EBC /* CleverTapEventDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapEventDetail.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapEventDetail.h; sourceTree = "<group>"; };
+		6A84B7D387F6B89DBBA20EB1E6A508B2 /* CleverTapSyncDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapSyncDelegate.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapSyncDelegate.h; sourceTree = "<group>"; };
+		7165C9390983631E8E17CCAC7C0E216B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A23618A9149F690FB722CA5BE69199E /* Pods-NotificationService-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationService-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F41454E46F194C98F1D2BB51AFB7F3C /* Pods-NotificationService-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotificationService-resources.sh"; sourceTree = "<group>"; };
-		81C66F3BE6C7DE6E40FCEE9E31FAD9F8 /* CleverTapSyncDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapSyncDelegate.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapSyncDelegate.h; sourceTree = "<group>"; };
-		86E64D38BE22E156FF885B90DF13DA76 /* CTNotificationService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CTNotificationService.modulemap; sourceTree = "<group>"; };
+		83D57FD6C87DE72F18BC509FC4E24B1F /* CTNotificationService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTNotificationService-umbrella.h"; sourceTree = "<group>"; };
 		8C70829EBD6B437E8BB793D5AAE11CCD /* Pods-CTNotificationServiceExampleSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CTNotificationServiceExampleSwift.modulemap"; sourceTree = "<group>"; };
 		92AFE9B3B95C7E2026AD66DA5AAEFC8E /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D422F9578F3C99FC51148A5C908181B /* CTNotificationServiceExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTNotificationServiceExtension.h; path = CTNotificationService/CTNotificationServiceExtension.h; sourceTree = "<group>"; };
+		9D44DD2D23CC8F65A9FCB379432FB123 /* CTNotificationService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTNotificationService-prefix.pch"; sourceTree = "<group>"; };
 		ABB7E74E133F338EE391ECA124467007 /* Pods-NotificationService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotificationService-umbrella.h"; sourceTree = "<group>"; };
-		B36FC3E82ED11194E48E9F4160BA2202 /* CleverTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTap.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTap.h; sourceTree = "<group>"; };
+		AEAFC447F978613F789264934F03090A /* CleverTapInAppNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapInAppNotificationDelegate.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapInAppNotificationDelegate.h; sourceTree = "<group>"; };
 		B7D010076B3E5A3CBB25B76EFA62FDA9 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		C01C2E138E51AFACB52274BA9FEE2852 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4EFC925AC4409B0AD89AA82A5274B9B /* CleverTapEventDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapEventDetail.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapEventDetail.h; sourceTree = "<group>"; };
+		D66DDF5A7AFA4665DD9C5F17C6140270 /* CTNotificationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTNotificationService.h; path = CTNotificationService/CTNotificationService.h; sourceTree = "<group>"; };
 		E52DA2DF63F5F905FA8DAD46462F6C69 /* Pods_CTNotificationServiceExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CTNotificationServiceExampleSwift.framework; path = "Pods-CTNotificationServiceExampleSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E76B13650FA8826BBD949C97B17468FF /* CTNotificationService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTNotificationService-prefix.pch"; sourceTree = "<group>"; };
-		ECE57D284C89F65CF9D1AAF626D0C15D /* CleverTapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleverTapSDK.framework; sourceTree = "<group>"; };
-		ED82FFC8A094EC1F896A341E0E8FE7F1 /* CleverTapBuildInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapBuildInfo.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapBuildInfo.h; sourceTree = "<group>"; };
 		EFDC429D84EF3731119D302395723D0C /* Pods-NotificationService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotificationService-dummy.m"; sourceTree = "<group>"; };
+		F580673849DCE9A12F5EDA16DFDA346B /* CleverTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTap.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTap.h; sourceTree = "<group>"; };
 		F695DCAA87742DEC72163773B3D6EC5B /* Pods-NotificationService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotificationService.modulemap"; sourceTree = "<group>"; };
 		F7C75F6A5B1D9D6706B320394DF359F8 /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotificationService.framework; path = "Pods-NotificationService.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,14 +109,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02D13A173479CDE05C248806B72301ED /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				77BEA79B16552AEDCEB1851C01E1287E /* CleverTap-iOS-SDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		0AFF1406E52B2FA5E7201B402050E378 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,22 +119,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		18E65D95381D22A77507E1FC6139F5A1 /* CTNotificationService */ = {
+		140BC7DC2C1434E95C845A3B0434A6BD /* CleverTap-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				62DD4F7BA526DD553FEC64F2E590EC6E /* CTNotificationService */,
-				84A1B8BB64330787A339088CFA12F5AD /* Support Files */,
+				F68BBD07AC7D63E58392F36120028681 /* Main */,
 			);
-			name = CTNotificationService;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		2BEBB1621415FEBCDF7573EA9B38F52D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				18E65D95381D22A77507E1FC6139F5A1 /* CTNotificationService */,
-			);
-			name = "Development Pods";
+			name = "CleverTap-iOS-SDK";
+			path = "CleverTap-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		3E52C150E30CE5F7FEDD34D338234F21 /* Pods-CTNotificationServiceExampleSwift */ = {
@@ -163,23 +146,26 @@
 			path = "Target Support Files/Pods-CTNotificationServiceExampleSwift";
 			sourceTree = "<group>";
 		};
-		4DCCBC71A14747349A4E1E74AE7049F7 /* Frameworks */ = {
+		4EC6F370C6396BD0D1CEAEDB867E2B16 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ECE57D284C89F65CF9D1AAF626D0C15D /* CleverTapSDK.framework */,
+				34E0E655A47ADF75F2FA2FAB8AB17AEE /* CTNotificationService.modulemap */,
+				2C83127825372EBD2599ACFB0923A0C9 /* CTNotificationService.xcconfig */,
+				26C6A618BAB0C0B7EEE6D47B64C75F72 /* CTNotificationService-dummy.m */,
+				9D44DD2D23CC8F65A9FCB379432FB123 /* CTNotificationService-prefix.pch */,
+				83D57FD6C87DE72F18BC509FC4E24B1F /* CTNotificationService-umbrella.h */,
+				7165C9390983631E8E17CCAC7C0E216B /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/CTNotificationService";
 			sourceTree = "<group>";
 		};
-		62DD4F7BA526DD553FEC64F2E590EC6E /* CTNotificationService */ = {
+		59094138D6F5E1452F7DA8148B8634DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67B693A4709ABB9F85ABB1301325E090 /* CTNotificationService.h */,
-				385D9E1E8735931CF4BEE813141FC9A0 /* CTNotificationServiceExtension.h */,
-				3A74AB7C773E0D35F3AF480A13E458D0 /* CTNotificationServiceExtension.m */,
+				684F84AB541EA919ED4D559355B6A3C0 /* CleverTapSDK.framework */,
 			);
-			name = CTNotificationService;
-			path = CTNotificationService;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -190,53 +176,36 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		77BEA79B16552AEDCEB1851C01E1287E /* CleverTap-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				89A065E75ECD4002F3368DF243FEF43D /* Main */,
-			);
-			name = "CleverTap-iOS-SDK";
-			path = "CleverTap-iOS-SDK";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				2BEBB1621415FEBCDF7573EA9B38F52D /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				02D13A173479CDE05C248806B72301ED /* Pods */,
+				9AFB7257E207E9A0E1125DDC334026DC /* Pods */,
 				0AFF1406E52B2FA5E7201B402050E378 /* Products */,
 				DDE09F5C3CE1B3AEEE861B547D62E4C8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84A1B8BB64330787A339088CFA12F5AD /* Support Files */ = {
+		87A2644BD7F4A679E498BDBC8BBC41D8 /* CTNotificationService */ = {
 			isa = PBXGroup;
 			children = (
-				86E64D38BE22E156FF885B90DF13DA76 /* CTNotificationService.modulemap */,
-				6E0ECFCDC72623CAC5ABAE7C305DCCB6 /* CTNotificationService.xcconfig */,
-				63CD442894EE556AA5A4D1F1D4D59A59 /* CTNotificationService-dummy.m */,
-				E76B13650FA8826BBD949C97B17468FF /* CTNotificationService-prefix.pch */,
-				5C1D42C24AEEEEA53B7B47497AC4D041 /* CTNotificationService-umbrella.h */,
-				549D95ACD8DA252844F7686A0293A2D1 /* Info.plist */,
+				D66DDF5A7AFA4665DD9C5F17C6140270 /* CTNotificationService.h */,
+				9D422F9578F3C99FC51148A5C908181B /* CTNotificationServiceExtension.h */,
+				0A0440E091B07A25BD04FA4F64ADFDAB /* CTNotificationServiceExtension.m */,
+				4EC6F370C6396BD0D1CEAEDB867E2B16 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "ExampleSwift/Pods/Target Support Files/CTNotificationService";
+			name = CTNotificationService;
+			path = CTNotificationService;
 			sourceTree = "<group>";
 		};
-		89A065E75ECD4002F3368DF243FEF43D /* Main */ = {
+		9AFB7257E207E9A0E1125DDC334026DC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B36FC3E82ED11194E48E9F4160BA2202 /* CleverTap.h */,
-				ED82FFC8A094EC1F896A341E0E8FE7F1 /* CleverTapBuildInfo.h */,
-				768AE1DFDEED58B2DA46A770FC5C1EBC /* CleverTapEventDetail.h */,
-				3256D0E272915B9EC3BD32574CFB5CD4 /* CleverTapInAppNotificationDelegate.h */,
-				81C66F3BE6C7DE6E40FCEE9E31FAD9F8 /* CleverTapSyncDelegate.h */,
-				1EE93051B3E59FA3B84AA7902DF580CB /* CleverTapUTMDetail.h */,
-				4DCCBC71A14747349A4E1E74AE7049F7 /* Frameworks */,
+				140BC7DC2C1434E95C845A3B0434A6BD /* CleverTap-iOS-SDK */,
+				87A2644BD7F4A679E498BDBC8BBC41D8 /* CTNotificationService */,
 			);
-			name = Main;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -273,6 +242,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F68BBD07AC7D63E58392F36120028681 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F580673849DCE9A12F5EDA16DFDA346B /* CleverTap.h */,
+				14B33184A4368DE67C0B5A784455F778 /* CleverTapBuildInfo.h */,
+				D4EFC925AC4409B0AD89AA82A5274B9B /* CleverTapEventDetail.h */,
+				AEAFC447F978613F789264934F03090A /* CleverTapInAppNotificationDelegate.h */,
+				6A84B7D387F6B89DBBA20EB1E6A508B2 /* CleverTapSyncDelegate.h */,
+				1835922EC101A1329A917BD49A1589C4 /* CleverTapUTMDetail.h */,
+				59094138D6F5E1452F7DA8148B8634DA /* Frameworks */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -284,21 +267,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664859A0C90746B0A02749CE52924DF4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73BD0AF8389897D6A6371A1D0A1CCFDE /* CTNotificationService-umbrella.h in Headers */,
-				EACB1A89D6213FA7ABE13397A4B6AC45 /* CTNotificationService.h in Headers */,
-				F1933BB5B98D47D1D8800C36D4855EC3 /* CTNotificationServiceExtension.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		83538EBB9414D72E2543EC75204323BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7190D1BF9187E2B6F135477918A2FFA4 /* Pods-NotificationService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5895D4D8F2C9B441ED15FA394F02CBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEFAFA6145F1C059774E1302B38526E /* CTNotificationService-umbrella.h in Headers */,
+				D2E93CD3AE30A3C17FFD2BF50ACFBB12 /* CTNotificationService.h in Headers */,
+				BFDF9EC98D171DF43AFEA678289EC368 /* CTNotificationServiceExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,9 +310,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AAD76383613A7FE026E1F3ADDE06D38 /* Build configuration list for PBXNativeTarget "CTNotificationService" */;
 			buildPhases = (
-				2036DF15B3B25C374E64653BE9D14357 /* Sources */,
+				03962185C1DBEEE3A6F6D9E54F208334 /* Sources */,
 				C3FB4EFE79DAC519CABDDE52FFC7621B /* Frameworks */,
-				664859A0C90746B0A02749CE52924DF4 /* Headers */,
+				E5895D4D8F2C9B441ED15FA394F02CBA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -387,12 +370,12 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2036DF15B3B25C374E64653BE9D14357 /* Sources */ = {
+		03962185C1DBEEE3A6F6D9E54F208334 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5CEB0686E1BF7645253A2930D0AB14 /* CTNotificationService-dummy.m in Sources */,
-				AF0B7290FC2C9BDEFFC316334AA27C46 /* CTNotificationServiceExtension.m in Sources */,
+				1DDF0CB97D4C3A160A5DDD53BCC2267A /* CTNotificationService-dummy.m in Sources */,
+				86FA66A4523E603E1F2CE94D8BCB25D5 /* CTNotificationServiceExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,7 +601,7 @@
 		};
 		E6B54A05BCB8ED49F72EE77411697ADB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E0ECFCDC72623CAC5ABAE7C305DCCB6 /* CTNotificationService.xcconfig */;
+			baseConfigurationReference = 2C83127825372EBD2599ACFB0923A0C9 /* CTNotificationService.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -691,7 +674,7 @@
 		};
 		F211248B85CC3A43D5F2655B13DD371E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E0ECFCDC72623CAC5ABAE7C305DCCB6 /* CTNotificationService.xcconfig */;
+			baseConfigurationReference = 2C83127825372EBD2599ACFB0923A0C9 /* CTNotificationService.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -6,16 +6,12 @@ PODS:
 
 DEPENDENCIES:
   - CleverTap-iOS-SDK
-  - CTNotificationService (from `../`)
-
-EXTERNAL SOURCES:
-  CTNotificationService:
-    :path: "../"
+  - CTNotificationService
 
 SPEC CHECKSUMS:
   CleverTap-iOS-SDK: c054bb514fd8efafc92180acf234711097ad6773
-  CTNotificationService: 17c5af175ed90298a9d7a740582e04cd118f4229
+  CTNotificationService: 7838aa009dc85eed8c2f240c1f39d8ce6149f9f6
 
-PODFILE CHECKSUM: b9dc0ea5b0a992c32c39d49b357f9c2a6629e452
+PODFILE CHECKSUM: 68c2c94e1cc2f641882180b45d1b1d33a048ddac
 
 COCOAPODS: 1.1.1
