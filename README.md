@@ -54,15 +54,15 @@ Then, when sending notifications via [APNS](https://developer.apple.com/library/
 
 ```
 {
-	"aps": {
+    "aps": {
    		"alert": {
       		"body": "test message",
       		"title": "test title",
    	  	},
-		"mutable-content": 1,
+        "mutable-content": 1,
    	},
-   "ct_mediaType": "gif",
-   "ct_mediaUrl": "https://www.wired.com/images_blogs/design/2013/09/davey1_1.gif",
+    "ct_mediaType": "gif",
+    "ct_mediaUrl": "https://www.wired.com/images_blogs/design/2013/09/davey1_1.gif",
 	...
 }
 ```
