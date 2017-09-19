@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		079DADACD6B6E3152BBE8D752F69B5C1 /* Pods-CTNotificationServiceExampleSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FB6F6070D727B9FE515E5FF0177837 /* Pods-CTNotificationServiceExampleSwift-dummy.m */; };
-		1DDF0CB97D4C3A160A5DDD53BCC2267A /* CTNotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 113AB715626DF4DB2DA0D58AFF9C9C25 /* CTNotificationService-dummy.m */; };
+		1DDF0CB97D4C3A160A5DDD53BCC2267A /* CTNotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C6A618BAB0C0B7EEE6D47B64C75F72 /* CTNotificationService-dummy.m */; };
 		5B9EF720E18A727DBF7618EFE1DAC2B7 /* Pods-CTNotificationServiceExampleSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 624B061A0C295C41A85AEFC37B9BE0C8 /* Pods-CTNotificationServiceExampleSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61C3BE589B90591CBA1096ADF1AE3961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7190D1BF9187E2B6F135477918A2FFA4 /* Pods-NotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB7E74E133F338EE391ECA124467007 /* Pods-NotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86FA66A4523E603E1F2CE94D8BCB25D5 /* CTNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 577BB4179CAFCBD34C741ED407F7AE0E /* CTNotificationServiceExtension.m */; };
+		86FA66A4523E603E1F2CE94D8BCB25D5 /* CTNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0440E091B07A25BD04FA4F64ADFDAB /* CTNotificationServiceExtension.m */; };
 		8709AB3038B8C7F669D2B614C2DF307F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A112753196EEF66184B49EDD9BD9B556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		BFDF9EC98D171DF43AFEA678289EC368 /* CTNotificationServiceExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD207C5C3B42DD842C7E423CDDF5A71 /* CTNotificationServiceExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2E93CD3AE30A3C17FFD2BF50ACFBB12 /* CTNotificationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 42E86DBF8594C3E59B8E1E8F977BD6F7 /* CTNotificationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFDF9EC98D171DF43AFEA678289EC368 /* CTNotificationServiceExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D422F9578F3C99FC51148A5C908181B /* CTNotificationServiceExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E93CD3AE30A3C17FFD2BF50ACFBB12 /* CTNotificationService.h in Headers */ = {isa = PBXBuildFile; fileRef = D66DDF5A7AFA4665DD9C5F17C6140270 /* CTNotificationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB644AEA5FD47A94A31F763696DA2552 /* Pods-NotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDC429D84EF3731119D302395723D0C /* Pods-NotificationService-dummy.m */; };
-		DBEFAFA6145F1C059774E1302B38526E /* CTNotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5E8F2E743F435F11C9BF292ED3BB6A /* CTNotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBEFAFA6145F1C059774E1302B38526E /* CTNotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D57FD6C87DE72F18BC509FC4E24B1F /* CTNotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,38 +39,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		113AB715626DF4DB2DA0D58AFF9C9C25 /* CTNotificationService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTNotificationService-dummy.m"; sourceTree = "<group>"; };
+		0A0440E091B07A25BD04FA4F64ADFDAB /* CTNotificationServiceExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTNotificationServiceExtension.m; path = CTNotificationService/CTNotificationServiceExtension.m; sourceTree = "<group>"; };
+		109D0A975C8DC49CE187A69A607946C4 /* CleverTapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleverTapSDK.framework; sourceTree = "<group>"; };
 		19CAD54264F2DDA71004401FB0B13EEC /* CTNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CTNotificationService.framework; path = CTNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B323AC3C0B5689AF32D9F51E532E55B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2151CE3A484B1CFA1B093C19196F4919 /* Pods-CTNotificationServiceExampleSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTNotificationServiceExampleSwift-resources.sh"; sourceTree = "<group>"; };
 		21C88109E8D607808E678AEFC9CADDC4 /* Pods-CTNotificationServiceExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTNotificationServiceExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		2425662890745F8CD3ED93BD48B5BE3A /* Pods-CTNotificationServiceExampleSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTNotificationServiceExampleSwift-frameworks.sh"; sourceTree = "<group>"; };
+		26C6A618BAB0C0B7EEE6D47B64C75F72 /* CTNotificationService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTNotificationService-dummy.m"; sourceTree = "<group>"; };
+		2C83127825372EBD2599ACFB0923A0C9 /* CTNotificationService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTNotificationService.xcconfig; sourceTree = "<group>"; };
+		34E0E655A47ADF75F2FA2FAB8AB17AEE /* CTNotificationService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CTNotificationService.modulemap; sourceTree = "<group>"; };
 		3DE2C86ED47730133DDE0B7B3701DD7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42E86DBF8594C3E59B8E1E8F977BD6F7 /* CTNotificationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTNotificationService.h; path = CTNotificationService/CTNotificationService.h; sourceTree = "<group>"; };
 		46A4D2AEBB7A70C19202A51F788C868D /* Pods-CTNotificationServiceExampleSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTNotificationServiceExampleSwift-acknowledgements.plist"; sourceTree = "<group>"; };
-		577BB4179CAFCBD34C741ED407F7AE0E /* CTNotificationServiceExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTNotificationServiceExtension.m; path = CTNotificationService/CTNotificationServiceExtension.m; sourceTree = "<group>"; };
 		5B1D14953F661C5E3B50E2D190D26D5B /* Pods-CTNotificationServiceExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTNotificationServiceExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		5F9E4AE527CED7084B6FCCC50979D3F4 /* Pods-NotificationService-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotificationService-acknowledgements.markdown"; sourceTree = "<group>"; };
 		60FB6F6070D727B9FE515E5FF0177837 /* Pods-CTNotificationServiceExampleSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTNotificationServiceExampleSwift-dummy.m"; sourceTree = "<group>"; };
 		624B061A0C295C41A85AEFC37B9BE0C8 /* Pods-CTNotificationServiceExampleSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CTNotificationServiceExampleSwift-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		697DE34A8B2B7B26DFEBB6E664681A2E /* Pods-CTNotificationServiceExampleSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTNotificationServiceExampleSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6FD207C5C3B42DD842C7E423CDDF5A71 /* CTNotificationServiceExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTNotificationServiceExtension.h; path = CTNotificationService/CTNotificationServiceExtension.h; sourceTree = "<group>"; };
+		7165C9390983631E8E17CCAC7C0E216B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A23618A9149F690FB722CA5BE69199E /* Pods-NotificationService-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationService-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F41454E46F194C98F1D2BB51AFB7F3C /* Pods-NotificationService-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotificationService-resources.sh"; sourceTree = "<group>"; };
+		83D57FD6C87DE72F18BC509FC4E24B1F /* CTNotificationService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTNotificationService-umbrella.h"; sourceTree = "<group>"; };
 		8C70829EBD6B437E8BB793D5AAE11CCD /* Pods-CTNotificationServiceExampleSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CTNotificationServiceExampleSwift.modulemap"; sourceTree = "<group>"; };
-		8EB687F2E3F85EBD8CC8E36B958F8C57 /* CTNotificationService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTNotificationService-prefix.pch"; sourceTree = "<group>"; };
 		92AFE9B3B95C7E2026AD66DA5AAEFC8E /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3716AA36E5AB9A4400E0C65AC4EA54A /* CTNotificationService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTNotificationService.xcconfig; sourceTree = "<group>"; };
+		9D422F9578F3C99FC51148A5C908181B /* CTNotificationServiceExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTNotificationServiceExtension.h; path = CTNotificationService/CTNotificationServiceExtension.h; sourceTree = "<group>"; };
+		9D44DD2D23CC8F65A9FCB379432FB123 /* CTNotificationService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTNotificationService-prefix.pch"; sourceTree = "<group>"; };
 		ABB7E74E133F338EE391ECA124467007 /* Pods-NotificationService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotificationService-umbrella.h"; sourceTree = "<group>"; };
 		B7D010076B3E5A3CBB25B76EFA62FDA9 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		C01C2E138E51AFACB52274BA9FEE2852 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2B16D09AE9BBF6DC7FDEC94FB3110E2 /* CTNotificationService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CTNotificationService.modulemap; sourceTree = "<group>"; };
-		CE5E8F2E743F435F11C9BF292ED3BB6A /* CTNotificationService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTNotificationService-umbrella.h"; sourceTree = "<group>"; };
+		D66DDF5A7AFA4665DD9C5F17C6140270 /* CTNotificationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTNotificationService.h; path = CTNotificationService/CTNotificationService.h; sourceTree = "<group>"; };
 		E52DA2DF63F5F905FA8DAD46462F6C69 /* Pods_CTNotificationServiceExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CTNotificationServiceExampleSwift.framework; path = "Pods-CTNotificationServiceExampleSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDC429D84EF3731119D302395723D0C /* Pods-NotificationService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotificationService-dummy.m"; sourceTree = "<group>"; };
-		F45255D23A0464FB6BFCA0A9EC766926 /* CleverTapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleverTapSDK.framework; sourceTree = "<group>"; };
 		F695DCAA87742DEC72163773B3D6EC5B /* Pods-NotificationService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotificationService.modulemap"; sourceTree = "<group>"; };
 		F7C75F6A5B1D9D6706B320394DF359F8 /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotificationService.framework; path = "Pods-NotificationService.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,14 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02D13A173479CDE05C248806B72301ED /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9DEE02837EAB410ED3AC49F25784091E /* CleverTap-iOS-SDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		0AFF1406E52B2FA5E7201B402050E378 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,26 +113,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C612243959B9CAA8343CCA7CF6F82B1 /* Frameworks */ = {
+		1002D0F019354623D24703DC227CB1F9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F45255D23A0464FB6BFCA0A9EC766926 /* CleverTapSDK.framework */,
+				F649F37BEDB3025A1D80E78007AA5E7E /* Frameworks */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2B1F4EA7D3ABF71C2AD80AEF609B4FE5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2B16D09AE9BBF6DC7FDEC94FB3110E2 /* CTNotificationService.modulemap */,
-				A3716AA36E5AB9A4400E0C65AC4EA54A /* CTNotificationService.xcconfig */,
-				113AB715626DF4DB2DA0D58AFF9C9C25 /* CTNotificationService-dummy.m */,
-				8EB687F2E3F85EBD8CC8E36B958F8C57 /* CTNotificationService-prefix.pch */,
-				CE5E8F2E743F435F11C9BF292ED3BB6A /* CTNotificationService-umbrella.h */,
-				1B323AC3C0B5689AF32D9F51E532E55B /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "ExampleSwift/Pods/Target Support Files/CTNotificationService";
+			name = Main;
 			sourceTree = "<group>";
 		};
 		3E52C150E30CE5F7FEDD34D338234F21 /* Pods-CTNotificationServiceExampleSwift */ = {
@@ -161,45 +139,50 @@
 			path = "Target Support Files/Pods-CTNotificationServiceExampleSwift";
 			sourceTree = "<group>";
 		};
-		5D4E3261ACEB14658E958511ABE21F07 /* Development Pods */ = {
+		4EC6F370C6396BD0D1CEAEDB867E2B16 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				601CB8607357A86112133E31F7B1ADB1 /* CTNotificationService */,
+				34E0E655A47ADF75F2FA2FAB8AB17AEE /* CTNotificationService.modulemap */,
+				2C83127825372EBD2599ACFB0923A0C9 /* CTNotificationService.xcconfig */,
+				26C6A618BAB0C0B7EEE6D47B64C75F72 /* CTNotificationService-dummy.m */,
+				9D44DD2D23CC8F65A9FCB379432FB123 /* CTNotificationService-prefix.pch */,
+				83D57FD6C87DE72F18BC509FC4E24B1F /* CTNotificationService-umbrella.h */,
+				7165C9390983631E8E17CCAC7C0E216B /* Info.plist */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		601CB8607357A86112133E31F7B1ADB1 /* CTNotificationService */ = {
-			isa = PBXGroup;
-			children = (
-				42E86DBF8594C3E59B8E1E8F977BD6F7 /* CTNotificationService.h */,
-				6FD207C5C3B42DD842C7E423CDDF5A71 /* CTNotificationServiceExtension.h */,
-				577BB4179CAFCBD34C741ED407F7AE0E /* CTNotificationServiceExtension.m */,
-				2B1F4EA7D3ABF71C2AD80AEF609B4FE5 /* Support Files */,
-			);
-			name = CTNotificationService;
-			path = ../..;
+			name = "Support Files";
+			path = "../Target Support Files/CTNotificationService";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				5D4E3261ACEB14658E958511ABE21F07 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				02D13A173479CDE05C248806B72301ED /* Pods */,
+				9AFB7257E207E9A0E1125DDC334026DC /* Pods */,
 				0AFF1406E52B2FA5E7201B402050E378 /* Products */,
 				DDE09F5C3CE1B3AEEE861B547D62E4C8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9DEE02837EAB410ED3AC49F25784091E /* CleverTap-iOS-SDK */ = {
+		87A2644BD7F4A679E498BDBC8BBC41D8 /* CTNotificationService */ = {
 			isa = PBXGroup;
 			children = (
-				DB9B2C1175BD555A4CA9F478B4819A82 /* Main */,
+				D66DDF5A7AFA4665DD9C5F17C6140270 /* CTNotificationService.h */,
+				9D422F9578F3C99FC51148A5C908181B /* CTNotificationServiceExtension.h */,
+				0A0440E091B07A25BD04FA4F64ADFDAB /* CTNotificationServiceExtension.m */,
+				4EC6F370C6396BD0D1CEAEDB867E2B16 /* Support Files */,
 			);
-			name = "CleverTap-iOS-SDK";
-			path = "CleverTap-iOS-SDK";
+			name = CTNotificationService;
+			path = CTNotificationService;
+			sourceTree = "<group>";
+		};
+		9AFB7257E207E9A0E1125DDC334026DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE364E131E1C551B43043420DB02F820 /* CleverTap-iOS-SDK */,
+				87A2644BD7F4A679E498BDBC8BBC41D8 /* CTNotificationService */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -216,14 +199,6 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		DB9B2C1175BD555A4CA9F478B4819A82 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				0C612243959B9CAA8343CCA7CF6F82B1 /* Frameworks */,
-			);
-			name = Main;
 			sourceTree = "<group>";
 		};
 		DD54BE32A2976AB352C87571FCD7340A /* Pods-NotificationService */ = {
@@ -250,6 +225,23 @@
 				DD54BE32A2976AB352C87571FCD7340A /* Pods-NotificationService */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F649F37BEDB3025A1D80E78007AA5E7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				109D0A975C8DC49CE187A69A607946C4 /* CleverTapSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE364E131E1C551B43043420DB02F820 /* CleverTap-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1002D0F019354623D24703DC227CB1F9 /* Main */,
+			);
+			name = "CleverTap-iOS-SDK";
+			path = "CleverTap-iOS-SDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,7 +439,7 @@
 		};
 		1DF71026BDE5E62E55F2B2502C8565CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3716AA36E5AB9A4400E0C65AC4EA54A /* CTNotificationService.xcconfig */;
+			baseConfigurationReference = 2C83127825372EBD2599ACFB0923A0C9 /* CTNotificationService.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -685,7 +677,7 @@
 		};
 		CE359B86310EFA86B9C6A2FE9595100D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3716AA36E5AB9A4400E0C65AC4EA54A /* CTNotificationService.xcconfig */;
+			baseConfigurationReference = 2C83127825372EBD2599ACFB0923A0C9 /* CTNotificationService.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
