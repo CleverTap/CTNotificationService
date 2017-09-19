@@ -10,24 +10,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
         CleverTap.autoIntegrate()
-
-        // register for push notifications
-        DispatchQueue.main.async {
-            self.registerPush()
-        }
-        
+        self.registerPush()
         return true
     }
 
     private func registerPush() {
         // request permissions
-        UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) {
-            (granted, error) in
-            if (granted) {
-                UIApplication.shared.registerForRemoteNotifications()
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) {
+                (granted, error) in
+                if (granted) {
+                    DispatchQueue.main.async {
+                        UIApplication.shared.registerForRemoteNotifications()
+                    }
+                }
             }
+        } else {
+            // Fallback on earlier versions
         }
     }
     

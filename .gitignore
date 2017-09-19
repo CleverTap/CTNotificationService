@@ -26,3 +26,5 @@ Carthage
 
 Example/Podfile.lock
 Example/Pods/
+ExampleSwift/Podfile.lock
+ExampleSwift/Pods/
