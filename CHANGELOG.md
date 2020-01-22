@@ -2,7 +2,7 @@ Change Log
 ==========
 
 
-Version 0.1.2 *(20 January, 2020)*
+Version 0.1.2 *(22 January, 2020)*
 -------------------------------------------
 Replace FOUNDATION_EXPORT with extern.
 
