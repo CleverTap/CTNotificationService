@@ -1,10 +1,11 @@
 # CTNotificationService
 
 [![Version](https://img.shields.io/cocoapods/v/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
+[![codebeat badge](https://codebeat.co/badges/45087421-b644-44fc-9a92-f2ccf61e0b16)](https://codebeat.co/projects/github-com-clevertap-ctnotificationservice-master)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![Platform](https://img.shields.io/cocoapods/p/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 ![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-blue.svg)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ### A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications
 
