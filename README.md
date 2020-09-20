@@ -15,23 +15,23 @@ A simple Notification Service Extension class to add media attachments to iOS 10
 
 ## 📋 Requirements
 
-#### Supported on iOS version 10.0 or above
+1. Compatible with iOS version 10.0 or above
 
-#### Configure your app for Push and add a Notification Service Extension target
+2. Configure your app for Push and add a Notification Service Extension target
 
-- Enable [push notifications](https://developer.apple.com/notifications/) in your main app.
+   - Enable [push notifications](https://developer.apple.com/notifications/) in your main app.
 
-- Create a Notification Service Extension in your project. To do that in your Xcode project, select File -> New -> Target and choose the Notification Service Extension template.
+   - Create a Notification Service Extension in your project. To do that in your Xcode project, select File -> New -> Target and choose the Notification Service Extension template.
 
 ![notification service extension](https://github.com/CleverTap/CTNotificationService/blob/master/images/service_extension.png)
 
 ## 🎉 Installation
 
-#### Via CocoaPods
+### CocoaPods
 
 Install `CTNotificationService` in your Notification Service Extension via [CocoaPods](http://cocoapods.org)
 
-Your Podfile should look something like this:
+Your `Podfile` should look something like this:
 
     source 'https://github.com/CocoaPods/Specs.git'
     platform :ios, '10.0'
@@ -46,11 +46,21 @@ Then run `pod install`.
 
 [See example Podfile here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/Podfile).
 
-#### Via Carthage
+### Carthage
+
+CTNotificationService supports [Carthage](https://github.com/Carthage/Carthage) to package your dependencies as a framework.
+
+To integrate CTNotificationService into your Xcode project using Carthage, specify the following in your `Cartfile`:
+
+```
+github "CleverTap/CTNotificationService"
+```
+
+Run `carthage update` to build the framework and drag the built `CTNotificationService.framework` into your Xcode project.
 
 ## 🚀 Integration
 
-#### Configure your Notification Service Extension to use the CTNotificationServiceExtension class
+### Configure your Notification Service Extension to use the CTNotificationServiceExtension class
 
 By default CTNotificatonServiceExtension will look for the push payload key `ct_mediaUrl` with a value representing the url to your media file and the key `ct_mediaType` with a value of the type of media (image, video, audio or gif).
 
@@ -60,11 +70,11 @@ Alternatively, you can leave the NSExtensionPrincipalClass entry unchanged and i
 
 If you plan on downloading non-SSL urls please be sure to enable App Transport Security Settings -> Allow Arbitrary Loads -> true in your plist.  [See plist example here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/NotificationService/Info.plist).  
 
-#### Configure your APNS payload
+### Configure your APNS payload
 
-Then, when sending notifications via [APNS](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html):
-- include the mutable-content flag in your payload aps entry (this key must be present in the aps payload or the system will not call your app extension) 
-- add the `ct_mediaUrl` and `ct_mediaType` key-values (or your custom key-values) to the payload, outside of the aps entry.
+Then, when sending notifications via APNS:
+- Include the mutable-content flag in your payload aps entry (this key must be present in the aps payload or the system will not call your app extension) 
+- Add the `ct_mediaUrl` and `ct_mediaType` key-values (or your custom key-values) to the payload, outside of the aps entry.
 
 ```
 {
@@ -89,4 +99,4 @@ Then, when sending notifications via [APNS](https://developer.apple.com/library/
 
 ## 🆕 Change Log
 
-Refer to the [CTNotificationService Change Log](https://github.com/CleverTap/CTNotificationService/blob/master/CHANGELOG.md).
+Refer to the [CTNotificationService Change Log here](https://github.com/CleverTap/CTNotificationService/blob/master/CHANGELOG.md).
