@@ -1,5 +1,4 @@
 
-
 //! Project version number for CTNotificationService.
 extern double CTNotificationServiceVersionNumber;
 
