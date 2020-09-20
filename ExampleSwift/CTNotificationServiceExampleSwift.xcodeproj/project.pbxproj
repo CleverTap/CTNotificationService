@@ -170,7 +170,7 @@
 				52387AD91E6606F200C63B80 /* Frameworks */,
 				52387ADA1E6606F200C63B80 /* Resources */,
 				52387B001E66078B00C63B80 /* Embed App Extensions */,
-				3BAE9951B01FEE0878037BFD /* [CP] Embed Pods Frameworks */,
+				71F0FF875F7B834EE8928CAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,22 +305,17 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3BAE9951B01FEE0878037BFD /* [CP] Embed Pods Frameworks */ = {
+		71F0FF875F7B834EE8928CAD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CTNotificationServiceExampleSwift/Pods-CTNotificationServiceExampleSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CleverTap-iOS-SDK/CleverTapSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/CTNotificationService/CTNotificationService.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CTNotificationServiceExampleSwift/Pods-CTNotificationServiceExampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CleverTapSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTNotificationService.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CTNotificationServiceExampleSwift/Pods-CTNotificationServiceExampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
