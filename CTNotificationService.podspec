@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license          = "MIT" 
   s.author           = { "CleverTap" => "http://www.clevertap.com" }
   s.source           = { :git => "https://github.com/CleverTap/CTNotificationService.git", :tag => s.version.to_s }
-  s.requires_arc.    = true
+  s.requires_arc     = true
   s.platform         = :ios, '10.0'
   s.weak_frameworks  = 'UserNotifications'
   s.source_files     = 'CTNotificationService/*.{m,h}' 
