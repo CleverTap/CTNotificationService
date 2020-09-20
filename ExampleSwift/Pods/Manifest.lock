@@ -1,10 +1,10 @@
 PODS:
-  - CleverTap-iOS-SDK (3.7.2):
+  - CleverTap-iOS-SDK (3.8.1):
     - SDWebImage (~> 5.1)
-  - CTNotificationService (0.1.2)
-  - SDWebImage (5.4.1):
-    - SDWebImage/Core (= 5.4.1)
-  - SDWebImage/Core (5.4.1)
+  - CTNotificationService (0.1.3)
+  - SDWebImage (5.8.3):
+    - SDWebImage/Core (= 5.8.3)
+  - SDWebImage/Core (5.8.3)
 
 DEPENDENCIES:
   - CleverTap-iOS-SDK
@@ -20,9 +20,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CleverTap-iOS-SDK: 8d6398edb908b888e6413226a863035c388f9c4b
-  CTNotificationService: 6f60b2d2c966eb4627b691900f09eba3a0ffce63
-  SDWebImage: 29c340dbdcef342bb13125553f4e19ce056b07a7
+  CleverTap-iOS-SDK: 55c1becace89a08f408b3ed6fbe71e9c437f0abe
+  CTNotificationService: 910b253821ef6c08158bf8c7dedc421a4df4cd4c
+  SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
 
 PODFILE CHECKSUM: 49cd552e254b868f8a02e8de087f95a6325a094b
 
