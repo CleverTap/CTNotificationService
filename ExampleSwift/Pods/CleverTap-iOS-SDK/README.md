@@ -1,10 +1,14 @@
-
+<p align="center">
+  <img src="https://github.com/CleverTap/clevertap-segment-ios/blob/master/clevertap-logo.png" width="300"/>
+</p>
 
 # CleverTap iOS SDK  
 [![CI Status](https://api.travis-ci.org/CleverTap/clevertap-ios-sdk.svg?branch=master)](https://travis-ci.org/CleverTap/clevertap-ios-sdk)
 [![Version](https://img.shields.io/cocoapods/v/CleverTap-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/CleverTap-iOS-SDK)
 [![License](https://img.shields.io/cocoapods/l/CleverTap-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/CleverTap-iOS-SDK)
 [![Platform](https://img.shields.io/cocoapods/p/CleverTap-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/CleverTap-iOS-SDK)
+![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
+![tvOS 9.0+](https://img.shields.io/badge/tvOS-9.0%2B-blue.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 The CleverTap iOS SDK for App Analytics and Engagement
@@ -103,13 +107,13 @@ For more details, Please refer to our [installation guide](https://developer.cle
 
 ## Changelog #
 
-Check out the CleverTap iOS SDK [Change Log](https://github.com/CleverTap/clevertap-ios-sdk/blob/master/CHANGELOG.md) here.
+See the [CleverTap iOS SDK Change Log](https://github.com/CleverTap/clevertap-ios-sdk/blob/master/CHANGELOG.md).
 
-## Questions? #
+## Help and Questions? #
 
- If you have questions or concerns, you can reach out to the CleverTap support team at [support@clevertap.com](mailto:support@clevertap.com).
+If you have questions or concerns, you can reach out to the CleverTap support team from the CleverTap Dashboard.
  
- ## License #
+## License #
 
-Check out the CleverTap iOS SDK [License](https://github.com/CleverTap/clevertap-ios-sdk/blob/master/LICENSE) here.
+CleverTap iOS SDK is released under the MIT license. See [LICENSE](https://github.com/CleverTap/clevertap-ios-sdk/blob/master/LICENSE) for details.
 
