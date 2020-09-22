@@ -62,7 +62,7 @@ static NSString * const kAudio = @"audio";
 }
 
 - (void)serviceExtensionTimeWillExpire {
-    [self contentComplete];
+    self.contentHandler(self.bestAttemptContent);
 }
 
 - (void)contentComplete {
