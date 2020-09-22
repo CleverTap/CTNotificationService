@@ -24,7 +24,7 @@ static NSString * const kAudio = @"audio";
     
     NSDictionary *userInfo = request.content.userInfo;
     if (userInfo == nil) {
-        [self contentComplete];
+        self.contentHandler(self.bestAttemptContent);
         return;
     }
     
@@ -45,7 +45,7 @@ static NSString * const kAudio = @"audio";
         }
         
 #endif
-        [self contentComplete];
+        self.contentHandler(self.bestAttemptContent);
         return;
     }
     
@@ -56,16 +56,12 @@ static NSString * const kAudio = @"audio";
         if (attachment) {
             self.bestAttemptContent.attachments = [NSArray arrayWithObject:attachment];
         }
-        [self contentComplete];
+        self.contentHandler(self.bestAttemptContent);
     }];
     
 }
 
 - (void)serviceExtensionTimeWillExpire {
-    self.contentHandler(self.bestAttemptContent);
-}
-
-- (void)contentComplete {
     self.contentHandler(self.bestAttemptContent);
 }
 
