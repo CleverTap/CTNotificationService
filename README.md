@@ -1,27 +1,37 @@
 # CTNotificationService
 
 [![Version](https://img.shields.io/cocoapods/v/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
+[![codebeat badge](https://codebeat.co/badges/45087421-b644-44fc-9a92-f2ccf61e0b16)](https://codebeat.co/projects/github-com-clevertap-ctnotificationservice-master)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![Platform](https://img.shields.io/cocoapods/p/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
+![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-blue.svg)
 
-### A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications
+## 👋 Introduction
 
-Starting with iOS 10 you can add media attachments (image, gif, video, audio) to iOS push notifications.  This library provides a simple drop-in class to accomplish that.
+A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications. Starting with iOS 10 you can add media attachments (image, gif, video, audio) to iOS push notifications. This library provides a simple drop-in class to accomplish that.
 
 [Rich push notifications](https://developer.apple.com/videos/play/wwdc2016/708/) are enabled in iOS 10 via a [Notification Service Extension](https://developer.apple.com/reference/usernotifications/unnotificationserviceextension), a separate and distinct binary embedded in your app bundle.
 
-### Configure your app for Push and add a Notification Service Extension target
+## 📋 Requirements
 
-Enable [push notifications](https://developer.apple.com/notifications/) in your main app.
+1. Compatible with iOS version 10.0 or above
 
-Create a Notification Service Extension in your project. To do that in your Xcode project, select File -> New -> Target and choose the Notification Service Extension template.
+2. Configure your app for Push and add a Notification Service Extension target
+
+   - Enable [push notifications](https://developer.apple.com/notifications/) in your main app.
+
+   - Create a Notification Service Extension in your project. To do that in your Xcode project, select File -> New -> Target and choose the Notification Service Extension template.
 
 ![notification service extension](https://github.com/CleverTap/CTNotificationService/blob/master/images/service_extension.png)
 
+## 🎉 Installation
 
-### Install CTNotificationService in your Notification Service Extension via [CocoaPods](http://cocoapods.org)
+### CocoaPods
 
-Your Podfile should look something like this:
+Install `CTNotificationService` in your Notification Service Extension via [CocoaPods](http://cocoapods.org)
+
+Your `Podfile` should look something like this:
 
     source 'https://github.com/CocoaPods/Specs.git'
     platform :ios, '10.0'
@@ -36,6 +46,20 @@ Then run `pod install`.
 
 [See example Podfile here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/Podfile).
 
+### Carthage
+
+CTNotificationService supports [Carthage](https://github.com/Carthage/Carthage) to package your dependencies as a framework.
+
+To integrate CTNotificationService into your Xcode project using Carthage, specify the following in your `Cartfile`:
+
+```
+github "CleverTap/CTNotificationService"
+```
+
+Run `carthage update` to build the framework and drag the built `CTNotificationService.framework` into your Xcode project.
+
+## 🚀 Integration
+
 ### Configure your Notification Service Extension to use the CTNotificationServiceExtension class
 
 By default CTNotificatonServiceExtension will look for the push payload key `ct_mediaUrl` with a value representing the url to your media file and the key `ct_mediaType` with a value of the type of media (image, video, audio or gif).
@@ -48,9 +72,9 @@ If you plan on downloading non-SSL urls please be sure to enable App Transport S
 
 ### Configure your APNS payload
 
-Then, when sending notifications via [APNS](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html):
-- include the mutable-content flag in your payload aps entry (this key must be present in the aps payload or the system will not call your app extension) 
-- add the `ct_mediaUrl` and `ct_mediaType` key-values (or your custom key-values) to the payload, outside of the aps entry.
+Then, when sending notifications via APNS:
+- Include the mutable-content flag in your payload aps entry (this key must be present in the aps payload or the system will not call your app extension) 
+- Add the `ct_mediaUrl` and `ct_mediaType` key-values (or your custom key-values) to the payload, outside of the aps entry.
 
 ```
 {
@@ -67,6 +91,12 @@ Then, when sending notifications via [APNS](https://developer.apple.com/library/
 }
 ```
 
-See [an example Swift project here](https://github.com/CleverTap/CTNotificationService/tree/master/ExampleSwift).
+## 𝌡 Example Usage
 
-See [an example Objective-C project here](https://github.com/CleverTap/CTNotificationService/tree/master/Example).
+- See [an example Swift project here](https://github.com/CleverTap/CTNotificationService/tree/master/ExampleSwift).
+
+- See [an example Objective-C project here](https://github.com/CleverTap/CTNotificationService/tree/master/Example).
+
+## 🆕 Change Log
+
+Refer to the [CTNotificationService Change Log here](https://github.com/CleverTap/CTNotificationService/blob/master/CHANGELOG.md).
