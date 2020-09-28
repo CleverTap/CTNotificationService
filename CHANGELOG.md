@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-Version 0.1.3 *(25 September, 2020)*
+Version 0.1.3 *(28 September, 2020)*
 -------------------------------------------
 - Adds support for [Carthage](https://github.com/Carthage/Carthage)
 - Update Starter Applications
