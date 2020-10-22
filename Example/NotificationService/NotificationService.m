@@ -1,5 +1,6 @@
 
 #import "NotificationService.h"
+#import <CleverTapSDK/CleverTap.h>
 
 @implementation NotificationService
 
