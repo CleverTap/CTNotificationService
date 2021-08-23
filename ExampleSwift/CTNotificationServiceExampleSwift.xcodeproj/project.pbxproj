@@ -14,7 +14,6 @@
 		52387AEA1E6606F200C63B80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52387AE81E6606F200C63B80 /* LaunchScreen.storyboard */; };
 		52387AF81E66078B00C63B80 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52387AF71E66078B00C63B80 /* NotificationService.swift */; };
 		52387AFC1E66078B00C63B80 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52387AF51E66078B00C63B80 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		52387B031E66080100C63B80 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 52387B021E66080100C63B80 /* logo.png */; };
 		A240F8E03B539558B3108693 /* Pods_CTNotificationServiceExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6476FE85E859AB836640E8 /* Pods_CTNotificationServiceExampleSwift.framework */; };
 		B14D526A346CD29F410E43C2 /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0412399F51761AB47DC2F8 /* Pods_NotificationService.framework */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		52387AF51E66078B00C63B80 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		52387AF71E66078B00C63B80 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		52387AF91E66078B00C63B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52387B021E66080100C63B80 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		52387B041E66096600C63B80 /* CTNotificationServiceExampleSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CTNotificationServiceExampleSwift.entitlements; sourceTree = "<group>"; };
 		5B6476FE85E859AB836640E8 /* Pods_CTNotificationServiceExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTNotificationServiceExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C5193531A72E04FD8CF243 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				52387B041E66096600C63B80 /* CTNotificationServiceExampleSwift.entitlements */,
-				52387B011E66080100C63B80 /* images */,
 				52387ADF1E6606F200C63B80 /* AppDelegate.swift */,
 				52387AE11E6606F200C63B80 /* ViewController.swift */,
 				52387AE31E6606F200C63B80 /* Main.storyboard */,
@@ -126,14 +123,6 @@
 				52387AF91E66078B00C63B80 /* Info.plist */,
 			);
 			path = NotificationService;
-			sourceTree = "<group>";
-		};
-		52387B011E66080100C63B80 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				52387B021E66080100C63B80 /* logo.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		8FF75E6CB2F5EE41906EF303 /* Pods */ = {
@@ -250,7 +239,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52387B031E66080100C63B80 /* logo.png in Resources */,
 				52387AEA1E6606F200C63B80 /* LaunchScreen.storyboard in Resources */,
 				52387AE71E6606F200C63B80 /* Assets.xcassets in Resources */,
 				52387AE51E6606F200C63B80 /* Main.storyboard in Resources */,
