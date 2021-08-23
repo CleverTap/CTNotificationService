@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -57,7 +57,6 @@
 		52387AF91E66078B00C63B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52387B021E66080100C63B80 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		52387B041E66096600C63B80 /* CTNotificationServiceExampleSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CTNotificationServiceExampleSwift.entitlements; sourceTree = "<group>"; };
-		52387B061E660F5200C63B80 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		5B6476FE85E859AB836640E8 /* Pods_CTNotificationServiceExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTNotificationServiceExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C5193531A72E04FD8CF243 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		90AFECF85508D7B3DC82F6F6 /* Pods-CTNotificationServiceExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTNotificationServiceExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-CTNotificationServiceExampleSwift/Pods-CTNotificationServiceExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 				52387AE61E6606F200C63B80 /* Assets.xcassets */,
 				52387AE81E6606F200C63B80 /* LaunchScreen.storyboard */,
 				52387AEB1E6606F200C63B80 /* Info.plist */,
-				52387B061E660F5200C63B80 /* Bridging-Header.h */,
 			);
 			path = CTNotificationServiceExampleSwift;
 			sourceTree = "<group>";
@@ -146,7 +144,6 @@
 				68C5193531A72E04FD8CF243 /* Pods-NotificationService.debug.xcconfig */,
 				48B180BA941BE348618C661B /* Pods-NotificationService.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -509,7 +506,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clevertap.CTNotificationServiceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -530,7 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clevertap.CTNotificationServiceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
