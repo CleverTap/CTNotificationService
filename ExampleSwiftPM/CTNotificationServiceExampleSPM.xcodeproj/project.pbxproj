@@ -505,8 +505,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CleverTap/CTNotificationService";
 			requirement = {
-				branch = "feature/SDK-1053-Support-SPM";
-				kind = branch;
+				kind = revision;
+				revision = 4d17069a4c9d165d869efdcad79e1db0c81e4ce4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

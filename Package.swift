@@ -16,7 +16,11 @@ let package = Package(
         .target(
             name: "CTNotificationService",
             path: "CTNotificationService",
-            sources: ["./"]
+            sources: ["./"],
+            publicHeadersPath: "Public",
+            cSettings: [
+                .headerSearchPath("./"),
+            ]
         )
     ]
 )
