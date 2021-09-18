@@ -6,7 +6,6 @@
 //
 
 import UserNotifications
-import CTNotificationService
 
 class NotificationService: UNNotificationServiceExtension {
 
