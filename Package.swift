@@ -16,14 +16,7 @@ let package = Package(
         .target(
             name: "CTNotificationService",
             path: "CTNotificationService",
-            publicHeadersPath: "Public",
-            cSettings: [
-                .headerSearchPath("./"),
-            ],
-            linkerSettings: [
-                .linkedFramework("UserNotifications"),
-                .linkedFramework("UIKit")
-            ]
+            sources: ["./"]
         )
     ]
 )
