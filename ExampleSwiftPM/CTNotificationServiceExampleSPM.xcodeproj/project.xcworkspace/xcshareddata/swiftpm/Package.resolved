@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CTNotificationService",
+        "repositoryURL": "https://github.com/CleverTap/CTNotificationService",
+        "state": {
+          "branch": null,
+          "revision": "2ca4e0b4e594e29485fedfcfee6ba87e7a95fc69",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,34 @@
 		4992D0CF26F58F8B000E3BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0CD26F58F8B000E3BFE /* Main.storyboard */; };
 		4992D0D126F58F8B000E3BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0D026F58F8B000E3BFE /* Assets.xcassets */; };
 		4992D0D426F58F8B000E3BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0D226F58F8B000E3BFE /* LaunchScreen.storyboard */; };
+		4992D0E226F59005000E3BFE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0E126F59005000E3BFE /* NotificationService.swift */; };
+		4992D0E626F59005000E3BFE /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4992D0DF26F59005000E3BFE /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4992D0ED26F59181000E3BFE /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 4992D0EC26F59181000E3BFE /* CTNotificationService */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4992D0E426F59005000E3BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4992D0BC26F58F8B000E3BFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4992D0DE26F59005000E3BFE;
+			remoteInfo = NotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4992D0E726F59005000E3BFE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4992D0E626F59005000E3BFE /* NotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4992D0C426F58F8B000E3BFE /* CTNotificationServiceExampleSPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTNotificationServiceExampleSPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +51,21 @@
 		4992D0D026F58F8B000E3BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4992D0D326F58F8B000E3BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4992D0D526F58F8B000E3BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4992D0DF26F59005000E3BFE /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4992D0E126F59005000E3BFE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		4992D0E326F59005000E3BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4992D0C126F58F8B000E3BFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4992D0ED26F59181000E3BFE /* CTNotificationService in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4992D0DC26F59005000E3BFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4992D0C626F58F8B000E3BFE /* CTNotificationServiceExampleSPM */,
+				4992D0E026F59005000E3BFE /* NotificationService */,
 				4992D0C526F58F8B000E3BFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				4992D0C426F58F8B000E3BFE /* CTNotificationServiceExampleSPM.app */,
+				4992D0DF26F59005000E3BFE /* NotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +107,15 @@
 			path = CTNotificationServiceExampleSPM;
 			sourceTree = "<group>";
 		};
+		4992D0E026F59005000E3BFE /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				4992D0E126F59005000E3BFE /* NotificationService.swift */,
+				4992D0E326F59005000E3BFE /* Info.plist */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +126,37 @@
 				4992D0C026F58F8B000E3BFE /* Sources */,
 				4992D0C126F58F8B000E3BFE /* Frameworks */,
 				4992D0C226F58F8B000E3BFE /* Resources */,
+				4992D0E726F59005000E3BFE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4992D0E526F59005000E3BFE /* PBXTargetDependency */,
+			);
+			name = CTNotificationServiceExampleSPM;
+			packageProductDependencies = (
+				4992D0EC26F59181000E3BFE /* CTNotificationService */,
+			);
+			productName = CTNotificationServiceExampleSPM;
+			productReference = 4992D0C426F58F8B000E3BFE /* CTNotificationServiceExampleSPM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4992D0DE26F59005000E3BFE /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4992D0EA26F59005000E3BFE /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				4992D0DB26F59005000E3BFE /* Sources */,
+				4992D0DC26F59005000E3BFE /* Frameworks */,
+				4992D0DD26F59005000E3BFE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CTNotificationServiceExampleSPM;
-			productName = CTNotificationServiceExampleSPM;
-			productReference = 4992D0C426F58F8B000E3BFE /* CTNotificationServiceExampleSPM.app */;
-			productType = "com.apple.product-type.application";
+			name = NotificationService;
+			productName = NotificationService;
+			productReference = 4992D0DF26F59005000E3BFE /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +170,9 @@
 					4992D0C326F58F8B000E3BFE = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					4992D0DE26F59005000E3BFE = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 4992D0BF26F58F8B000E3BFE /* Build configuration list for PBXProject "CTNotificationServiceExampleSPM" */;
@@ -110,11 +184,15 @@
 				Base,
 			);
 			mainGroup = 4992D0BB26F58F8B000E3BFE;
+			packageReferences = (
+				4992D0EB26F59181000E3BFE /* XCRemoteSwiftPackageReference "CTNotificationService" */,
+			);
 			productRefGroup = 4992D0C526F58F8B000E3BFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4992D0C326F58F8B000E3BFE /* CTNotificationServiceExampleSPM */,
+				4992D0DE26F59005000E3BFE /* NotificationService */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +205,13 @@
 				4992D0D426F58F8B000E3BFE /* LaunchScreen.storyboard in Resources */,
 				4992D0D126F58F8B000E3BFE /* Assets.xcassets in Resources */,
 				4992D0CF26F58F8B000E3BFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4992D0DD26F59005000E3BFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4992D0DB26F59005000E3BFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4992D0E226F59005000E3BFE /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4992D0E526F59005000E3BFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4992D0DE26F59005000E3BFE /* NotificationService */;
+			targetProxy = 4992D0E426F59005000E3BFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4992D0CD26F58F8B000E3BFE /* Main.storyboard */ = {
@@ -284,6 +385,7 @@
 		4992D0D926F58F8B000E3BFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +404,7 @@
 		4992D0DA26F58F8B000E3BFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +415,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.CTNotificationServiceExampleSPM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4992D0E826F59005000E3BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.CTNotificationServiceExampleSPM.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4992D0E926F59005000E3BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.CTNotificationServiceExampleSPM.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,7 +477,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4992D0EA26F59005000E3BFE /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4992D0E826F59005000E3BFE /* Debug */,
+				4992D0E926F59005000E3BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4992D0EB26F59181000E3BFE /* XCRemoteSwiftPackageReference "CTNotificationService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CleverTap/CTNotificationService";
+			requirement = {
+				kind = revision;
+				revision = 2ca4e0b4e594e29485fedfcfee6ba87e7a95fc69;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4992D0EC26F59181000E3BFE /* CTNotificationService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4992D0EB26F59181000E3BFE /* XCRemoteSwiftPackageReference "CTNotificationService" */;
+			productName = CTNotificationService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4992D0BC26F58F8B000E3BFE /* Project object */;
 }
