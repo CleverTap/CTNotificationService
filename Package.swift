@@ -17,7 +17,10 @@ let package = Package(
             dependencies: [],
             path: "CTNotificationService",
             exclude: ["CTNotificationService.plist"],
-            publicHeadersPath: "include"
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("./")
+            ]
         )
     ]
 )
