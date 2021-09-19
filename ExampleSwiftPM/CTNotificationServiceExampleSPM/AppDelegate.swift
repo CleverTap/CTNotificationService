@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import CTN
+import CTNotificationService
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -16,6 +16,9 @@ let package = Package(
         .target(
             name: "CTNotificationService",
             path: "CTNotificationService",
+            exclude: [
+                "CTNotificationService.plist"
+            ],
             sources: ["./"],
             publicHeadersPath: "Public",
             cSettings: [
