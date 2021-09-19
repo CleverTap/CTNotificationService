@@ -5,8 +5,8 @@
         "package": "CTNotificationService",
         "repositoryURL": "https://github.com/CleverTap/CTNotificationService",
         "state": {
-          "branch": null,
-          "revision": "dfbc3e7b29bcda903fbc51b50c3811095a99e771",
+          "branch": "feature/SDK-1053-Support-SPM",
+          "revision": "b8560ccf6818191cbde6f5769b45998af048d667",
           "version": null
         }
       }
