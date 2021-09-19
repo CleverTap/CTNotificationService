@@ -10,7 +10,6 @@
 		4988592126F78F8800CF79E3 /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 4988592026F78F8800CF79E3 /* CTNotificationService */; };
 		4988592326F78FCF00CF79E3 /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 4988592226F78FCF00CF79E3 /* CTNotificationService */; };
 		4992D0C826F58F8B000E3BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0C726F58F8B000E3BFE /* AppDelegate.swift */; };
-		4992D0CA26F58F8B000E3BFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0C926F58F8B000E3BFE /* SceneDelegate.swift */; };
 		4992D0CC26F58F8B000E3BFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0CB26F58F8B000E3BFE /* ViewController.swift */; };
 		4992D0CF26F58F8B000E3BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0CD26F58F8B000E3BFE /* Main.storyboard */; };
 		4992D0D126F58F8B000E3BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0D026F58F8B000E3BFE /* Assets.xcassets */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		4992D0C426F58F8B000E3BFE /* CTNotificationServiceExampleSPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTNotificationServiceExampleSPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4992D0C726F58F8B000E3BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4992D0C926F58F8B000E3BFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4992D0CB26F58F8B000E3BFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4992D0CE26F58F8B000E3BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4992D0D026F58F8B000E3BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				4992D0C726F58F8B000E3BFE /* AppDelegate.swift */,
-				4992D0C926F58F8B000E3BFE /* SceneDelegate.swift */,
 				4992D0CB26F58F8B000E3BFE /* ViewController.swift */,
 				4992D0CD26F58F8B000E3BFE /* Main.storyboard */,
 				4992D0D026F58F8B000E3BFE /* Assets.xcassets */,
@@ -237,7 +234,6 @@
 			files = (
 				4992D0CC26F58F8B000E3BFE /* ViewController.swift in Sources */,
 				4992D0C826F58F8B000E3BFE /* AppDelegate.swift in Sources */,
-				4992D0CA26F58F8B000E3BFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
