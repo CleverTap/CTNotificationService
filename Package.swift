@@ -1,4 +1,5 @@
 // swift-tools-version:5.3
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
@@ -8,22 +9,15 @@ let package = Package(
         .iOS(.v10)
     ],
     products: [
-        .library(
-            name: "CTNotificationService",
-            targets: ["CTNotificationService"])
+        .library(name: "CTNotificationService", targets: ["CTNotificationService"])
     ],
     targets: [
         .target(
             name: "CTNotificationService",
+            dependencies: [],
             path: "CTNotificationService",
-            exclude: [
-                "CTNotificationService.plist"
-            ],
-            sources: ["./"],
-            publicHeadersPath: "Public",
-            cSettings: [
-                .headerSearchPath("./"),
-            ]
+            exclude: ["CTNotificationService.plist"],
+            publicHeadersPath: "include"
         )
     ]
 )
