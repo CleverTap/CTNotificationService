@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+Version 0.1.4 *(27 September, 2021)*
+-------------------------------------------
+- Adds support for installation via Swift Package Manager
+- Update Starter Applications
+
 Version 0.1.3 *(28 September, 2020)*
 -------------------------------------------
 - Adds support for [Carthage](https://github.com/Carthage/Carthage)
