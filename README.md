@@ -58,6 +58,15 @@ github "CleverTap/CTNotificationService"
 
 Run `carthage update` to build the framework and drag the built `CTNotificationService.framework` into your Xcode project.
 
+### Swift Package Manager
+
+Swift Package Manager is an Xcode tool that installs project dependencies. To use it to install Iterable's iOS SDK, follow these steps:
+
+- In Xcode, navigate to **File -> Swift Package Manager -> Add Package Dependency.**
+- Enter **https://github.com/CleverTap/CTNotificationService.git** when choosing package repo and Click **Next.**
+- On the next screen, Select an SDK version (by default, Xcode selects the latest stable version). Click **Next.**
+- Click **Finish** and ensure that the **CTNotificationService** has been added to the appropriate target.
+
 ## 🚀 Integration
 
 ### Configure your Notification Service Extension to use the CTNotificationServiceExtension class
