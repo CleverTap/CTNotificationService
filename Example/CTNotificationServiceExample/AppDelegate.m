@@ -3,7 +3,7 @@
 #import <UserNotifications/UserNotifications.h>
 #import <CleverTapSDK/CleverTap.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
 
@@ -21,6 +21,7 @@
 - (void)registerPush {
     
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    center.delegate = self;
     [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error){
         if( granted ){
             dispatch_async(dispatch_get_main_queue(), ^(void) {
@@ -30,9 +31,10 @@
     }];
 }
 
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    NSLog(@"APPDELEGATE: didReceiveRemoteNotification %@", userInfo);
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler {
+    NSLog(@"APPDELEGATE: didReceiveRemoteNotification %@", response.notification.request.content.userInfo);
 }
+
 
 - (BOOL)application:(UIApplication *)app
             openURL:(NSURL *)url
