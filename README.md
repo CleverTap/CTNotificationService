@@ -60,7 +60,7 @@ Run `carthage update` to build the framework and drag the built `CTNotificationS
 
 ### Swift Package Manager
 
-Swift Package Manager is an Xcode tool that installs project dependencies. To use it to install Iterable's iOS SDK, follow these steps:
+Swift Package Manager is an Xcode tool that installs project dependencies. To use it to install CTNotificationService SDK, follow these steps:
 
 - In Xcode, navigate to **File -> Swift Package Manager -> Add Package Dependency.**
 - Enter **https://github.com/CleverTap/CTNotificationService.git** when choosing package repo and Click **Next.**
@@ -102,9 +102,12 @@ Then, when sending notifications via APNS:
 
 ## 𝌡 Example Usage
 
-- See [an example Swift project here](https://github.com/CleverTap/CTNotificationService/tree/master/ExampleSwift).
+- See [an example Swift project here](/ExampleSwift).
 
-- See [an example Objective-C project here](https://github.com/CleverTap/CTNotificationService/tree/master/Example).
+- See [an example Objective-C project here](/Example).
+
+- See [an example SwiftPM project here](/ExampleSwiftPM).
+
 
 ## 🆕 Change Log
 
