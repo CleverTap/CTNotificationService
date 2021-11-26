@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-Version 0.1.4 *(27 September, 2021)*
+Version 0.1.4 *(29 November, 2021)*
 -------------------------------------------
 - Adds support for installation via Swift Package Manager
 - Update Starter Applications
