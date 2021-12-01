@@ -102,11 +102,11 @@ Then, when sending notifications via APNS:
 
 ## 𝌡 Example Usage
 
-- See [an example Swift project here](/ExampleSwift).
+- See [an example Swift project here](https://github.com/CleverTap/CTNotificationService/blob/master/ExampleSwift).
 
-- See [an example Objective-C project here](/Example).
+- See [an example Objective-C project here](https://github.com/CleverTap/CTNotificationService/blob/master/Example).
 
-- See [an example SwiftPM project here](/ExampleSwiftPM).
+- See [an example SwiftPM project here](https://github.com/CleverTap/CTNotificationService/blob/master/ExampleSwiftPM).
 
 
 ## 🆕 Change Log
