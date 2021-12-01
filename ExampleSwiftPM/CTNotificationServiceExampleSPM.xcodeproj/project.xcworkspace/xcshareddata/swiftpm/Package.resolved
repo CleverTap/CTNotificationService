@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "CTNotificationService",
-        "repositoryURL": "https://github.com/CleverTap/CTNotificationService",
+        "repositoryURL": "https://github.com/CleverTap/CTNotificationService.git",
         "state": {
-          "branch": "feature/SDK-1053-Support-SPM",
-          "revision": "b8560ccf6818191cbde6f5769b45998af048d667",
+          "branch": null,
+          "revision": "44810748d41b38e870266e9f7223993f118e6151",
           "version": null
         }
       }

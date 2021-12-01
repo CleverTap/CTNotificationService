@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4988592126F78F8800CF79E3 /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 4988592026F78F8800CF79E3 /* CTNotificationService */; };
-		4988592326F78FCF00CF79E3 /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 4988592226F78FCF00CF79E3 /* CTNotificationService */; };
 		4992D0C826F58F8B000E3BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0C726F58F8B000E3BFE /* AppDelegate.swift */; };
 		4992D0CC26F58F8B000E3BFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0CB26F58F8B000E3BFE /* ViewController.swift */; };
 		4992D0CF26F58F8B000E3BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0CD26F58F8B000E3BFE /* Main.storyboard */; };
@@ -16,6 +14,7 @@
 		4992D0D426F58F8B000E3BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0D226F58F8B000E3BFE /* LaunchScreen.storyboard */; };
 		4992D0E226F59005000E3BFE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0E126F59005000E3BFE /* NotificationService.swift */; };
 		4992D0E626F59005000E3BFE /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4992D0DF26F59005000E3BFE /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		499524592757351A0065C3E1 /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 499524582757351A0065C3E1 /* CTNotificationService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4988592126F78F8800CF79E3 /* CTNotificationService in Frameworks */,
+				499524592757351A0065C3E1 /* CTNotificationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4988592326F78FCF00CF79E3 /* CTNotificationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +140,7 @@
 			);
 			name = CTNotificationServiceExampleSPM;
 			packageProductDependencies = (
-				4988592026F78F8800CF79E3 /* CTNotificationService */,
+				499524582757351A0065C3E1 /* CTNotificationService */,
 			);
 			productName = CTNotificationServiceExampleSPM;
 			productReference = 4992D0C426F58F8B000E3BFE /* CTNotificationServiceExampleSPM.app */;
@@ -162,7 +160,6 @@
 			);
 			name = NotificationService;
 			packageProductDependencies = (
-				4988592226F78FCF00CF79E3 /* CTNotificationService */,
 			);
 			productName = NotificationService;
 			productReference = 4992D0DF26F59005000E3BFE /* NotificationService.appex */;
@@ -195,7 +192,7 @@
 			);
 			mainGroup = 4992D0BB26F58F8B000E3BFE;
 			packageReferences = (
-				4988591F26F78F8800CF79E3 /* XCRemoteSwiftPackageReference "CTNotificationService" */,
+				49952457275735190065C3E1 /* XCRemoteSwiftPackageReference "CTNotificationService" */,
 			);
 			productRefGroup = 4992D0C526F58F8B000E3BFE /* Products */;
 			projectDirPath = "";
@@ -500,25 +497,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4988591F26F78F8800CF79E3 /* XCRemoteSwiftPackageReference "CTNotificationService" */ = {
+		49952457275735190065C3E1 /* XCRemoteSwiftPackageReference "CTNotificationService" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CleverTap/CTNotificationService";
+			repositoryURL = "https://github.com/CleverTap/CTNotificationService.git";
 			requirement = {
-				branch = "feature/SDK-1053-Support-SPM";
-				kind = branch;
+				kind = revision;
+				revision = 44810748d41b38e870266e9f7223993f118e6151;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4988592026F78F8800CF79E3 /* CTNotificationService */ = {
+		499524582757351A0065C3E1 /* CTNotificationService */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4988591F26F78F8800CF79E3 /* XCRemoteSwiftPackageReference "CTNotificationService" */;
-			productName = CTNotificationService;
-		};
-		4988592226F78FCF00CF79E3 /* CTNotificationService */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4988591F26F78F8800CF79E3 /* XCRemoteSwiftPackageReference "CTNotificationService" */;
+			package = 49952457275735190065C3E1 /* XCRemoteSwiftPackageReference "CTNotificationService" */;
 			productName = CTNotificationService;
 		};
 /* End XCSwiftPackageProductDependency section */
