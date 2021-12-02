@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![codebeat badge](https://codebeat.co/badges/45087421-b644-44fc-9a92-f2ccf61e0b16)](https://codebeat.co/projects/github-com-clevertap-ctnotificationservice-master)
+[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![Platform](https://img.shields.io/cocoapods/p/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
