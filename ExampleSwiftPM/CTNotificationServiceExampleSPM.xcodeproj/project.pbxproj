@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4927063327573D690036F80E /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 4927063227573D690036F80E /* CTNotificationService */; };
 		4992D0C826F58F8B000E3BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0C726F58F8B000E3BFE /* AppDelegate.swift */; };
 		4992D0CC26F58F8B000E3BFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0CB26F58F8B000E3BFE /* ViewController.swift */; };
 		4992D0CF26F58F8B000E3BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0CD26F58F8B000E3BFE /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		4992D0D426F58F8B000E3BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0D226F58F8B000E3BFE /* LaunchScreen.storyboard */; };
 		4992D0E226F59005000E3BFE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0E126F59005000E3BFE /* NotificationService.swift */; };
 		4992D0E626F59005000E3BFE /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4992D0DF26F59005000E3BFE /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		499524592757351A0065C3E1 /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 499524582757351A0065C3E1 /* CTNotificationService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				499524592757351A0065C3E1 /* CTNotificationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4927063327573D690036F80E /* CTNotificationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,6 @@
 			);
 			name = CTNotificationServiceExampleSPM;
 			packageProductDependencies = (
-				499524582757351A0065C3E1 /* CTNotificationService */,
 			);
 			productName = CTNotificationServiceExampleSPM;
 			productReference = 4992D0C426F58F8B000E3BFE /* CTNotificationServiceExampleSPM.app */;
@@ -160,6 +159,7 @@
 			);
 			name = NotificationService;
 			packageProductDependencies = (
+				4927063227573D690036F80E /* CTNotificationService */,
 			);
 			productName = NotificationService;
 			productReference = 4992D0DF26F59005000E3BFE /* NotificationService.appex */;
@@ -183,7 +183,7 @@
 				};
 			};
 			buildConfigurationList = 4992D0BF26F58F8B000E3BFE /* Build configuration list for PBXProject "CTNotificationServiceExampleSPM" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -192,7 +192,7 @@
 			);
 			mainGroup = 4992D0BB26F58F8B000E3BFE;
 			packageReferences = (
-				49952457275735190065C3E1 /* XCRemoteSwiftPackageReference "CTNotificationService" */,
+				4927063127573D160036F80E /* XCRemoteSwiftPackageReference "CTNotificationService" */,
 			);
 			productRefGroup = 4992D0C526F58F8B000E3BFE /* Products */;
 			projectDirPath = "";
@@ -395,12 +395,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5J34NR598;
 				INFOPLIST_FILE = CTNotificationServiceExampleSPM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.CTNotificationServiceExampleSPM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevertap.CTNotificationServiceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
@@ -415,12 +416,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5J34NR598;
 				INFOPLIST_FILE = CTNotificationServiceExampleSPM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.CTNotificationServiceExampleSPM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevertap.CTNotificationServiceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
@@ -432,13 +434,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5J34NR598;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.CTNotificationServiceExampleSPM.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevertap.CTNotificationServiceExample.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -450,13 +453,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5J34NR598;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.CTNotificationServiceExampleSPM.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clevertap.CTNotificationServiceExample.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -497,20 +501,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		49952457275735190065C3E1 /* XCRemoteSwiftPackageReference "CTNotificationService" */ = {
+		4927063127573D160036F80E /* XCRemoteSwiftPackageReference "CTNotificationService" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CleverTap/CTNotificationService.git";
 			requirement = {
 				kind = revision;
-				revision = 44810748d41b38e870266e9f7223993f118e6151;
+				revision = a5d6f1ae55abba8d0577a86c8dd7043cce93261c;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		499524582757351A0065C3E1 /* CTNotificationService */ = {
+		4927063227573D690036F80E /* CTNotificationService */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 49952457275735190065C3E1 /* XCRemoteSwiftPackageReference "CTNotificationService" */;
+			package = 4927063127573D160036F80E /* XCRemoteSwiftPackageReference "CTNotificationService" */;
 			productName = CTNotificationService;
 		};
 /* End XCSwiftPackageProductDependency section */
