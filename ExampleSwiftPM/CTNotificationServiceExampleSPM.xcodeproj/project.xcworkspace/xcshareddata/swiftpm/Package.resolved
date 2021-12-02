@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CleverTapSDK",
+        "repositoryURL": "https://github.com/CleverTap/clevertap-ios-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "189f51732f304a8e5747f301c49f26bc25aeb6b4",
+          "version": "3.10.0"
+        }
+      },
+      {
+        "package": "CTNotificationService",
+        "repositoryURL": "https://github.com/CleverTap/CTNotificationService.git",
+        "state": {
+          "branch": null,
+          "revision": "a5d6f1ae55abba8d0577a86c8dd7043cce93261c",
+          "version": null
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "a72df4849408da7e5d3c1b586797b7c601c41d1b",
+          "version": "5.12.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

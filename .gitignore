@@ -29,3 +29,6 @@ Example/Pods
 
 ExampleSwift/Podfile.lock
 ExampleSwift/Pods
+
+# Swift Package Manager
+Package.resolved

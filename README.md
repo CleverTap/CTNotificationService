@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![codebeat badge](https://codebeat.co/badges/45087421-b644-44fc-9a92-f2ccf61e0b16)](https://codebeat.co/projects/github-com-clevertap-ctnotificationservice-master)
+[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![Platform](https://img.shields.io/cocoapods/p/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
@@ -58,6 +59,15 @@ github "CleverTap/CTNotificationService"
 
 Run `carthage update` to build the framework and drag the built `CTNotificationService.framework` into your Xcode project.
 
+### Swift Package Manager
+
+Swift Package Manager is an Xcode tool that installs project dependencies. To use it to install CTNotificationService SDK, follow these steps:
+
+- In Xcode, navigate to **File -> Swift Package Manager -> Add Package Dependency.**
+- Enter **https://github.com/CleverTap/CTNotificationService.git** when choosing package repo and Click **Next.**
+- On the next screen, Select an SDK version (by default, Xcode selects the latest stable version). Click **Next.**
+- Click **Finish** and ensure that the **CTNotificationService** has been added to the appropriate target.
+
 ## 🚀 Integration
 
 ### Configure your Notification Service Extension to use the CTNotificationServiceExtension class
@@ -93,9 +103,12 @@ Then, when sending notifications via APNS:
 
 ## 𝌡 Example Usage
 
-- See [an example Swift project here](https://github.com/CleverTap/CTNotificationService/tree/master/ExampleSwift).
+- See [an example Swift project here](https://github.com/CleverTap/CTNotificationService/blob/master/ExampleSwift).
 
-- See [an example Objective-C project here](https://github.com/CleverTap/CTNotificationService/tree/master/Example).
+- See [an example Objective-C project here](https://github.com/CleverTap/CTNotificationService/blob/master/Example).
+
+- See [an example SwiftPM project here](https://github.com/CleverTap/CTNotificationService/blob/master/ExampleSwiftPM).
+
 
 ## 🆕 Change Log
 

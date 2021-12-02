@@ -5,6 +5,4 @@ extern double CTNotificationServiceVersionNumber;
 //! Project version string for CTNotificationService.
 extern const unsigned char CTNotificationServiceVersionString[];
 
-#import <CTNotificationService/CTNotificationServiceExtension.h>
-
-
+#import "CTNotificationServiceExtension.h"

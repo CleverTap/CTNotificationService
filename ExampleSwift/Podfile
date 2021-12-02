@@ -7,6 +7,6 @@ target 'CTNotificationServiceExampleSwift' do
 end
 
 target 'NotificationService' do
-   pod "CTNotificationService"
+   pod "CTNotificationService", :path =>'../'
 end
 

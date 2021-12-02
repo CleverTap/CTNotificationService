@@ -4,7 +4,7 @@ import CleverTapSDK
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
     
@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func registerPush() {
         // request permissions
         if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().delegate = self
             UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) {
                 (granted, error) in
                 if (granted) {
@@ -49,8 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         completion?(false)
     }
     
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        print("did receive remote notification \(userInfo)")
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("did receive remote notification \(response.notification.request.content.userInfo)")
     }
     
     func showAlert(message:String) {
