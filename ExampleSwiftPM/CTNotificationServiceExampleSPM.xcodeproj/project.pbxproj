@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4927063327573D690036F80E /* CTNotificationService in Frameworks */ = {isa = PBXBuildFile; productRef = 4927063227573D690036F80E /* CTNotificationService */; };
+		4978F37D27585A9500233D85 /* CleverTapSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4978F37C27585A9500233D85 /* CleverTapSDK */; };
 		4992D0C826F58F8B000E3BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0C726F58F8B000E3BFE /* AppDelegate.swift */; };
 		4992D0CC26F58F8B000E3BFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992D0CB26F58F8B000E3BFE /* ViewController.swift */; };
 		4992D0CF26F58F8B000E3BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4992D0CD26F58F8B000E3BFE /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		4992D0DF26F59005000E3BFE /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4992D0E126F59005000E3BFE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		4992D0E326F59005000E3BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499B5D842758586800CAEBE5 /* CTNotificationServiceExampleSPM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CTNotificationServiceExampleSPM.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4978F37D27585A9500233D85 /* CleverTapSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +98,7 @@
 		4992D0C626F58F8B000E3BFE /* CTNotificationServiceExampleSPM */ = {
 			isa = PBXGroup;
 			children = (
+				499B5D842758586800CAEBE5 /* CTNotificationServiceExampleSPM.entitlements */,
 				4992D0C726F58F8B000E3BFE /* AppDelegate.swift */,
 				4992D0CB26F58F8B000E3BFE /* ViewController.swift */,
 				4992D0CD26F58F8B000E3BFE /* Main.storyboard */,
@@ -140,6 +144,7 @@
 			);
 			name = CTNotificationServiceExampleSPM;
 			packageProductDependencies = (
+				4978F37C27585A9500233D85 /* CleverTapSDK */,
 			);
 			productName = CTNotificationServiceExampleSPM;
 			productReference = 4992D0C426F58F8B000E3BFE /* CTNotificationServiceExampleSPM.app */;
@@ -193,6 +198,7 @@
 			mainGroup = 4992D0BB26F58F8B000E3BFE;
 			packageReferences = (
 				4927063127573D160036F80E /* XCRemoteSwiftPackageReference "CTNotificationService" */,
+				4978F37B27585A9500233D85 /* XCRemoteSwiftPackageReference "clevertap-ios-sdk" */,
 			);
 			productRefGroup = 4992D0C526F58F8B000E3BFE /* Products */;
 			projectDirPath = "";
@@ -394,6 +400,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CTNotificationServiceExampleSPM/CTNotificationServiceExampleSPM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5J34NR598;
 				INFOPLIST_FILE = CTNotificationServiceExampleSPM/Info.plist;
@@ -415,6 +422,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CTNotificationServiceExampleSPM/CTNotificationServiceExampleSPM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5J34NR598;
 				INFOPLIST_FILE = CTNotificationServiceExampleSPM/Info.plist;
@@ -509,6 +517,14 @@
 				revision = a5d6f1ae55abba8d0577a86c8dd7043cce93261c;
 			};
 		};
+		4978F37B27585A9500233D85 /* XCRemoteSwiftPackageReference "clevertap-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CleverTap/clevertap-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -516,6 +532,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4927063127573D160036F80E /* XCRemoteSwiftPackageReference "CTNotificationService" */;
 			productName = CTNotificationService;
+		};
+		4978F37C27585A9500233D85 /* CleverTapSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4978F37B27585A9500233D85 /* XCRemoteSwiftPackageReference "clevertap-ios-sdk" */;
+			productName = CleverTapSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
