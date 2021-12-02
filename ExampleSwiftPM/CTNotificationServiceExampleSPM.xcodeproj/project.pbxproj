@@ -519,7 +519,7 @@
 			repositoryURL = "https://github.com/CleverTap/CTNotificationService.git";
 			requirement = {
 				kind = revision;
-				revision = a5d6f1ae55abba8d0577a86c8dd7043cce93261c;
+				revision = 4c94f007a21192e500619d7595de749041dc5d08;
 			};
 		};
 		4978F37B27585A9500233D85 /* XCRemoteSwiftPackageReference "clevertap-ios-sdk" */ = {
