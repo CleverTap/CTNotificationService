@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BAB646F27BBA8D50042D27B /* CTNotificationServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB646E27BBA8D50042D27B /* CTNotificationServiceExtension.swift */; };
 		526389281E64F6D300C8F9B1 /* CTNotificationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 526389261E64F6D300C8F9B1 /* CTNotificationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		526389301E64FB1C00C8F9B1 /* CTNotificationServiceExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5263892E1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		526389311E64FB1C00C8F9B1 /* CTNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5263892F1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BAB646E27BBA8D50042D27B /* CTNotificationServiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CTNotificationServiceExtension.swift; path = ../../../CTNotificationServiceExtension.swift; sourceTree = "<group>"; };
 		526389231E64F6D300C8F9B1 /* CTNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		526389261E64F6D300C8F9B1 /* CTNotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTNotificationService.h; sourceTree = "<group>"; };
 		526389271E64F6D300C8F9B1 /* CTNotificationService.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CTNotificationService.plist; sourceTree = "<group>"; };
-		5263892E1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTNotificationServiceExtension.h; sourceTree = "<group>"; };
-		5263892F1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTNotificationServiceExtension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				526389261E64F6D300C8F9B1 /* CTNotificationService.h */,
-				5263892E1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.h */,
-				5263892F1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.m */,
 				526389271E64F6D300C8F9B1 /* CTNotificationService.plist */,
+				0BAB646E27BBA8D50042D27B /* CTNotificationServiceExtension.swift */,
 			);
 			path = CTNotificationService;
 			sourceTree = "<group>";
@@ -65,7 +62,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526389301E64FB1C00C8F9B1 /* CTNotificationServiceExtension.h in Headers */,
 				526389281E64F6D300C8F9B1 /* CTNotificationService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +98,7 @@
 				TargetAttributes = {
 					526389221E64F6D300C8F9B1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1310;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -139,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526389311E64FB1C00C8F9B1 /* CTNotificationServiceExtension.m in Sources */,
+				0BAB646F27BBA8D50042D27B /* CTNotificationServiceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -286,6 +284,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -293,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -313,6 +314,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
