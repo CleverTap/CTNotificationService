@@ -49,8 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				526389261E64F6D300C8F9B1 /* CTNotificationService.h */,
-				526389271E64F6D300C8F9B1 /* CTNotificationService.plist */,
 				0BAB646E27BBA8D50042D27B /* CTNotificationServiceExtension.swift */,
+				526389271E64F6D300C8F9B1 /* CTNotificationService.plist */,
 			);
 			path = CTNotificationService;
 			sourceTree = "<group>";

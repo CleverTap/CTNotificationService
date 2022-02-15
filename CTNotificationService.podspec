@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
   s.platform         = :ios, '10.0'
   s.weak_frameworks  = 'UserNotifications'
-  s.source_files     = 'CTNotificationService/*.{m,h}' 
+  s.source_files     = 'CTNotificationService/*.{swift}' 
 end
