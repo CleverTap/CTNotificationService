@@ -1,4 +1,3 @@
-import Foundation
 import UserNotifications
 
 open class CTNotificationServiceExtension: UNNotificationServiceExtension {
@@ -13,6 +12,7 @@ open class CTNotificationServiceExtension: UNNotificationServiceExtension {
           
           // MARK: - CT Rich Push
           if let bestAttemptContent = bestAttemptContent {
+//              bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
               let userInfo = request.content.userInfo;
 
               // If there is no URL in the payload than
@@ -22,19 +22,10 @@ open class CTNotificationServiceExtension: UNNotificationServiceExtension {
                   return;
               }
               
-              // If there is an image in the payload,
-              // download and display the image.
-              
-              
-
-//
-//              NSString *mediaUrl = userInfo[mediaUrlKey];
-//              NSString *mediaType = userInfo[mediaTypeKey];
-              
               let mediaType = userInfo["ct_mediaType"] as? String
               let mediaUrl = userInfo["ct_mediaUrl"] as? String
               
-              if (mediaUrl != nil && mediaType == "image") {
+              if (mediaUrl != nil) {
                   let mediaUrl = URL(string: mediaUrl!)
                   let CTSession = URLSession(configuration: .default)
                   CTSession.downloadTask(with: mediaUrl!, completionHandler: { temporaryLocation, response, error in
@@ -71,7 +62,7 @@ open class CTNotificationServiceExtension: UNNotificationServiceExtension {
           }
       }
       
-      open override func serviceExtensionTimeWillExpire() {
+    open override func serviceExtensionTimeWillExpire() {
           // Called just before the extension will be terminated by the system.
           // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
           if let contentHandler = contentHandler, let bestAttemptContent =  bestAttemptContent {

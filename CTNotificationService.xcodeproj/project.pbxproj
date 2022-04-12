@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BAB646F27BBA8D50042D27B /* CTNotificationServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB646E27BBA8D50042D27B /* CTNotificationServiceExtension.swift */; };
-		526389281E64F6D300C8F9B1 /* CTNotificationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 526389261E64F6D300C8F9B1 /* CTNotificationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B9D7E38280597CB00DA18C7 /* CTNotificationServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D7E37280597CB00DA18C7 /* CTNotificationServiceExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BAB646E27BBA8D50042D27B /* CTNotificationServiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CTNotificationServiceExtension.swift; path = ../../../CTNotificationServiceExtension.swift; sourceTree = "<group>"; };
+		0B9D7E37280597CB00DA18C7 /* CTNotificationServiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTNotificationServiceExtension.swift; sourceTree = "<group>"; };
 		526389231E64F6D300C8F9B1 /* CTNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		526389261E64F6D300C8F9B1 /* CTNotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTNotificationService.h; sourceTree = "<group>"; };
 		526389271E64F6D300C8F9B1 /* CTNotificationService.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CTNotificationService.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,9 +46,8 @@
 		526389251E64F6D300C8F9B1 /* CTNotificationService */ = {
 			isa = PBXGroup;
 			children = (
-				526389261E64F6D300C8F9B1 /* CTNotificationService.h */,
-				0BAB646E27BBA8D50042D27B /* CTNotificationServiceExtension.swift */,
 				526389271E64F6D300C8F9B1 /* CTNotificationService.plist */,
+				0B9D7E37280597CB00DA18C7 /* CTNotificationServiceExtension.swift */,
 			);
 			path = CTNotificationService;
 			sourceTree = "<group>";
@@ -62,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526389281E64F6D300C8F9B1 /* CTNotificationService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BAB646F27BBA8D50042D27B /* CTNotificationServiceExtension.swift in Sources */,
+				0B9D7E38280597CB00DA18C7 /* CTNotificationServiceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
