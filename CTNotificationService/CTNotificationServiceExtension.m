@@ -7,6 +7,9 @@ static NSString * const kMediaTypeKey = @"ct_mediaType";
 static NSString * const kImage = @"image";
 static NSString * const kVideo = @"video";
 static NSString * const kAudio = @"audio";
+static NSString * const kImageJpeg = @"image/jpeg";
+static NSString * const kImagePng = @"image/png";
+static NSString * const kImageGif = @"image/gif";
 
 @interface CTNotificationServiceExtension()
 
@@ -65,30 +68,36 @@ static NSString * const kAudio = @"audio";
     self.contentHandler(self.bestAttemptContent);
 }
 
-- (NSString *)fileExtensionForMediaType:(NSString *)type {
-    NSString *ext = type;
+- (NSString *)fileExtensionForMediaType:(NSString *)mediaType mimeType:(NSString *)mimeType {
+    NSString *ext;
     
-    if ([type isEqualToString:kImage]) {
+    if ([mediaType isEqualToString:kImage]) {
         ext = @"jpg";
-    }
-    
-    if ([type isEqualToString:kVideo]) {
+    } else if ([mediaType isEqualToString:kVideo]) {
         ext = @"mp4";
-    }
-    
-    if ([type isEqualToString:kAudio]) {
+    } else if ([mediaType isEqualToString:kAudio]) {
         ext = @"mp3";
+    } else {
+        // If mediaType is none, check for mimeType of url.
+        if ([mimeType isEqualToString:kImageJpeg]) {
+            ext = @"jpeg";
+        } else if ([mimeType isEqualToString:kImagePng]) {
+            ext = @"png";
+        } else if ([mimeType isEqualToString:kImageGif]) {
+            ext = @"gif";
+        } else {
+            ext = @"";
+        }
     }
     
     return [@"." stringByAppendingString:ext];
 }
 
-- (void)loadAttachmentForUrlString:(NSString *)urlString withType:(NSString *)type
+- (void)loadAttachmentForUrlString:(NSString *)urlString withType:(NSString *)mediaType
                  completionHandler:(void(^)(UNNotificationAttachment *))completionHandler  {
     
     __block UNNotificationAttachment *attachment = nil;
     NSURL *attachmentURL = [NSURL URLWithString:urlString];
-    NSString *fileExt = [self fileExtensionForMediaType:type];
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     [[session downloadTaskWithURL:attachmentURL
@@ -98,6 +107,7 @@ static NSString * const kAudio = @"audio";
             NSLog(@"unable to add attachment: %@", error.localizedDescription);
 #endif
         } else {
+            NSString *fileExt = [self fileExtensionForMediaType:mediaType mimeType:response.MIMEType];
             NSFileManager *fileManager = [NSFileManager defaultManager];
             NSURL *localURL = [NSURL fileURLWithPath:[temporaryFileLocation.path stringByAppendingString:fileExt]];
             [fileManager moveItemAtURL:temporaryFileLocation toURL:localURL error:&error];
