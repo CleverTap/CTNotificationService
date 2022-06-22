@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+Version 0.1.5 *(22 June, 2022)*
+-------------------------------------------
+- Added support for media url having no extension.
+
 Version 0.1.4 *(2 December, 2021)*
 -------------------------------------------
 - Adds support for installation via Swift Package Manager
