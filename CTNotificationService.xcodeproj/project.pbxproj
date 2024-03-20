@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3210E7272BA345FB00C44F19 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3210E7262BA345FB00C44F19 /* PrivacyInfo.xcprivacy */; };
 		526389281E64F6D300C8F9B1 /* CTNotificationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 526389261E64F6D300C8F9B1 /* CTNotificationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		526389301E64FB1C00C8F9B1 /* CTNotificationServiceExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5263892E1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		526389311E64FB1C00C8F9B1 /* CTNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5263892F1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3210E7262BA345FB00C44F19 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		526389231E64F6D300C8F9B1 /* CTNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		526389261E64F6D300C8F9B1 /* CTNotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTNotificationService.h; sourceTree = "<group>"; };
 		526389271E64F6D300C8F9B1 /* CTNotificationService.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CTNotificationService.plist; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		526389251E64F6D300C8F9B1 /* CTNotificationService */ = {
 			isa = PBXGroup;
 			children = (
+				3210E7262BA345FB00C44F19 /* PrivacyInfo.xcprivacy */,
 				526389261E64F6D300C8F9B1 /* CTNotificationService.h */,
 				5263892E1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.h */,
 				5263892F1E64FB1C00C8F9B1 /* CTNotificationServiceExtension.m */,
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3210E7272BA345FB00C44F19 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
