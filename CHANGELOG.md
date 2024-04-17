@@ -1,5 +1,10 @@
 Change Log
 ==========
+Version 0.1.7 (17 April, 2024)
+-----------------------------------------------
+- Fixes a build error related to privacy manifests when statically linking the SDK using Cocoapods.
+- Fixes the error "Missing an expected key: 'NSPrivacyCollectedDataTypes'" when generating a privacy report.
+
 Version 0.1.6 (20 March, 2024)
 -----------------------------------------------
 - Adds privacy manifests.
