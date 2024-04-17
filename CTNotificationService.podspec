@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CTNotificationService"
-  s.version          = "0.1.6"
+  s.version          = "0.1.7"
   s.summary          = "A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications."
   s.homepage         = "https://github.com/CleverTap/CTNotificationService"
   s.license          = "MIT" 
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '10.0'
   s.weak_frameworks  = 'UserNotifications'
   s.source_files     = 'CTNotificationService/*.{m,h}' 
-  s.resources = 'CTNotificationService/*.{xcprivacy}'
+  s.resource_bundles = { 'CTNotificationService' => 'CTNotificationService/*.{xcprivacy}' }
 end
