@@ -1,5 +1,9 @@
 Change Log
 ==========
+Version 0.1.8 (xx October, 2026)
+-----------------------------------------------
+- **SDK Version Tracking:** When the CleverTap iOS SDK is integrated in the Notification Service Extension, CTNotificationService now registers its name and version with it via `setCustomSdkVersion:version:`, so the version is reported to CleverTap.
+
 Version 0.1.7 (17 April, 2024)
 -----------------------------------------------
 - Fixes a build error related to privacy manifests when statically linking the SDK using Cocoapods.
