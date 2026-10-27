@@ -4,17 +4,8 @@
 #import <os/log.h>
 
 static NSString * const kCTNotificationServiceSdkName = @"CTNotificationService";
-// Set by scripts/bump_version.sh to match the podspec version and verified by scripts/check_version.sh.
-static NSString * const kCTNotificationServiceVersion = @"0.1.8";
-
-// Converts major.minor.patch to major * 10000 + minor * 100 + patch, the format CleverTap Core SDK expects.
-static int CTNotificationServiceVersionCode(NSString *version) {
-    NSArray<NSString *> *parts = [version componentsSeparatedByString:@"."];
-    int major = parts.count > 0 ? parts[0].intValue : 0;
-    int minor = parts.count > 1 ? parts[1].intValue : 0;
-    int patch = parts.count > 2 ? parts[2].intValue : 0;
-    return major * 10000 + minor * 100 + patch;
-}
+// Version 0.1.8 as major * 10000 + minor * 100 + patch, the format CleverTap Core SDK expects.
+static int const kCTNotificationServiceVersion = 108;
 
 static NSString * const kMediaUrlKey = @"ct_mediaUrl";
 static NSString * const kMediaTypeKey = @"ct_mediaType";
@@ -116,9 +107,8 @@ static NSString * const kImageGif = @"image/gif";
             os_log(log, "CleverTap Core SDK does not support setCustomSdkVersion:version:, skipping SDK version registration");
             return;
         }
-        int versionCode = CTNotificationServiceVersionCode(kCTNotificationServiceVersion);
-        ((void (*)(id, SEL, NSString *, int))objc_msgSend)(cleverTap, setCustomSdkVersionSelector, kCTNotificationServiceSdkName, versionCode);
-        os_log(log, "Registered %{public}@ %{public}@ (%d) with CleverTap Core SDK", kCTNotificationServiceSdkName, kCTNotificationServiceVersion, versionCode);
+        ((void (*)(id, SEL, NSString *, int))objc_msgSend)(cleverTap, setCustomSdkVersionSelector, kCTNotificationServiceSdkName, kCTNotificationServiceVersion);
+        os_log(log, "Registered %{public}@ %d with CleverTap Core SDK", kCTNotificationServiceSdkName, kCTNotificationServiceVersion);
     });
 }
 
