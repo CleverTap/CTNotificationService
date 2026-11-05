@@ -526,7 +526,7 @@
 			repositoryURL = "https://github.com/CleverTap/clevertap-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 7.9.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
