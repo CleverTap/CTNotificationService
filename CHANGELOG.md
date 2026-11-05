@@ -1,5 +1,11 @@
 Change Log
 ==========
+Version 0.2.0 (5 November, 2026)
+-----------------------------------------------
+- Adds support for Xcode 27 and iOS 27.
+- Raises the minimum supported deployment target to iOS 15.0.
+- Updates the example apps to the UIScene lifecycle.
+
 Version 0.1.7 (17 April, 2024)
 -----------------------------------------------
 - Fixes a build error related to privacy manifests when statically linking the SDK using Cocoapods.

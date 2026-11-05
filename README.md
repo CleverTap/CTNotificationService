@@ -6,7 +6,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![Platform](https://img.shields.io/cocoapods/p/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
-![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-blue.svg)
+![iOS 15.0+](https://img.shields.io/badge/iOS-15.0%2B-blue.svg)
 
 ## 👋 Introduction
 
@@ -16,7 +16,9 @@ A simple Notification Service Extension class to add media attachments to iOS 10
 
 ## 📋 Requirements
 
-1. Compatible with iOS version 10.0 or above
+> **Note:** Starting with version 0.2.0, the minimum supported deployment target is iOS 15.0, and apps built with the Xcode 27 SDK must adopt the UIScene lifecycle. See the [Xcode 27 / iOS 27 Support guide](https://github.com/CleverTap/clevertap-ios-sdk/blob/master/docs/iOS27Support.md) in the CleverTap iOS SDK repo for the CocoaPods `post_install` snippet and the UIScene migration steps.
+
+1. Compatible with iOS version 15.0 or above
 
 2. Configure your app for Push and add a Notification Service Extension target
 
@@ -35,7 +37,7 @@ Install `CTNotificationService` in your Notification Service Extension via [Coco
 Your `Podfile` should look something like this:
 
     source 'https://github.com/CocoaPods/Specs.git'
-    platform :ios, '10.0'
+    platform :ios, '15.0'
 
     use_frameworks!
 
