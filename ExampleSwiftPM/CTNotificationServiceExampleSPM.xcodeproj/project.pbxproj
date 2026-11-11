@@ -198,7 +198,7 @@
 			);
 			mainGroup = 4992D0BB26F58F8B000E3BFE;
 			packageReferences = (
-				4927063127573D160036F80E /* XCLocalSwiftPackageReference "../" */,
+				4927063127573D160036F80E /* XCRemoteSwiftPackageReference "CTNotificationService" */,
 				4978F37B27585A9500233D85 /* XCRemoteSwiftPackageReference "clevertap-ios-sdk" */,
 			);
 			productRefGroup = 4992D0C526F58F8B000E3BFE /* Products */;
@@ -513,14 +513,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		4927063127573D160036F80E /* XCLocalSwiftPackageReference "../" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
+		4927063127573D160036F80E /* XCRemoteSwiftPackageReference "CTNotificationService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CleverTap/CTNotificationService.git";
+			requirement = {
+				kind = revision;
+				revision = 4c94f007a21192e500619d7595de749041dc5d08;
+			};
+		};
 		4978F37B27585A9500233D85 /* XCRemoteSwiftPackageReference "clevertap-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CleverTap/clevertap-ios-sdk.git";
@@ -534,6 +535,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		4927063227573D690036F80E /* CTNotificationService */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 4927063127573D160036F80E /* XCRemoteSwiftPackageReference "CTNotificationService" */;
 			productName = CTNotificationService;
 		};
 		4978F37C27585A9500233D85 /* CleverTapSDK */ = {

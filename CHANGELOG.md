@@ -2,7 +2,7 @@ Change Log
 ==========
 Version 0.1.8 (11 November, 2026)
 -----------------------------------------------
-- Adds support for Xcode 27 and iOS 27.
+- The SDK builds with Xcode 27 and runs on iOS 27.
 - Raises the minimum supported deployment target to iOS 15.0.
 - Updates the example apps to the UIScene lifecycle.
 

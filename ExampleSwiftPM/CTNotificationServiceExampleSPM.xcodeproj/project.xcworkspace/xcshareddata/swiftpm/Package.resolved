@@ -1,5 +1,5 @@
 {
-  "originHash" : "3c937117a89ffef30002764b2d5dad01f5731ac6b24a07adba2ab84c07a88fcb",
+  "originHash" : "7c09af525503c6eb433b13a568df0a7041f3fae2addd9f92f2e98d650c27e969",
   "pins" : [
     {
       "identity" : "clevertap-ios-sdk",
@@ -8,6 +8,14 @@
       "state" : {
         "revision" : "da5ca8205ef54c825e612281770580b026453e4f",
         "version" : "7.9.1"
+      }
+    },
+    {
+      "identity" : "ctnotificationservice",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CleverTap/CTNotificationService.git",
+      "state" : {
+        "revision" : "4c94f007a21192e500619d7595de749041dc5d08"
       }
     }
   ],
