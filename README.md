@@ -36,7 +36,7 @@ A simple Notification Service Extension class to add media attachments to iOS 10
 > source 'https://cdn.cocoapods.org/'
 > ```
 >
-> Existing installs keep working with no change.
+> Existing installs keep working with no change. See the [CleverTap podspecs repo](https://github.com/CleverTap/podspecs) for details.
 
 ### Swift Package Manager (recommended)
 
