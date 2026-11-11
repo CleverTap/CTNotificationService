@@ -1,6 +1,6 @@
 Change Log
 ==========
-Version 0.2.0 (5 November, 2026)
+Version 0.1.8 (11 November, 2026)
 -----------------------------------------------
 - Adds support for Xcode 27 and iOS 27.
 - Raises the minimum supported deployment target to iOS 15.0.

@@ -16,7 +16,7 @@ A simple Notification Service Extension class to add media attachments to iOS 10
 
 ## 📋 Requirements
 
-> **Note:** Starting with version 0.2.0, the minimum supported deployment target is iOS 15.0, and apps built with the Xcode 27 SDK must adopt the UIScene lifecycle. See the [Xcode 27 / iOS 27 Support guide](https://github.com/CleverTap/clevertap-ios-sdk/blob/master/docs/iOS27Support.md) in the CleverTap iOS SDK repo for the CocoaPods `post_install` snippet and the UIScene migration steps.
+> **Note:** Starting with version 0.1.8, the minimum supported deployment target is iOS 15.0, and apps built with the Xcode 27 SDK must adopt the UIScene lifecycle. See the [Xcode 27 / iOS 27 Support guide](https://github.com/CleverTap/clevertap-ios-sdk/blob/master/docs/iOS27Support.md) in the CleverTap iOS SDK repo for the CocoaPods `post_install` snippet and the UIScene migration steps.
 
 1. Compatible with iOS version 15.0 or above
 
