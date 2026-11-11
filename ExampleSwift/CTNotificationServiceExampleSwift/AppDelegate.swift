@@ -3,11 +3,9 @@ import UIKit
 import CleverTapSDK
 import UserNotifications
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
-    
-    var window: UIWindow?
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         CleverTap.autoIntegrate()
@@ -17,18 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     private func registerPush() {
         // request permissions
-        if #available(iOS 10.0, *) {
-            UNUserNotificationCenter.current().delegate = self
-            UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) {
-                (granted, error) in
-                if (granted) {
-                    DispatchQueue.main.async {
-                        UIApplication.shared.registerForRemoteNotifications()
-                    }
+        UNUserNotificationCenter.current().delegate = self
+        UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) {
+            (granted, error) in
+            if (granted) {
+                DispatchQueue.main.async {
+                    UIApplication.shared.registerForRemoteNotifications()
                 }
             }
-        } else {
-            // Fallback on earlier versions
         }
     }
     
@@ -60,7 +54,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             print("OK")
         }
         alertController.addAction(okAction)
-        self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+        // Under the scene lifecycle the app delegate's `window` is always nil, so the
+        // presenting controller has to come from the connected window scene.
+        UIApplication.shared.connectedScenes
+            .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+            .first?
+            .rootViewController?
+            .present(alertController, animated: true, completion: nil)
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -84,6 +84,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
+
+}
+
+// MARK: - UIScene lifecycle
+//
+// iOS 26 (Xcode 27 SDK) makes the UIScene lifecycle mandatory. Without a scene manifest
+// + delegate the app crashes at launch, so the window is created here instead of relying
+// on the legacy app-delegate `window`. See Info.plist > UIApplicationSceneManifest.
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let windowScene = scene as? UIWindowScene else { return }
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        self.window = window
+        window.makeKeyAndVisible()
+
+        connectionOptions.urlContexts.forEach { forwardDeepLink($0.url) }
+    }
+
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        // Warm deep links reach the scene delegate instead of application(_:open:options:).
+        URLContexts.forEach { forwardDeepLink($0.url) }
+    }
+
+    private func forwardDeepLink(_ url: URL) {
+        _ = (UIApplication.shared.delegate as? AppDelegate)?
+            .application(UIApplication.shared, open: url, options: [:])
+    }
 }
 

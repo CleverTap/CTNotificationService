@@ -1,5 +1,11 @@
 Change Log
 ==========
+Version 0.1.8 (11 November, 2026)
+-----------------------------------------------
+- The SDK builds with Xcode 27 and runs on iOS 27.
+- Raises the minimum supported deployment target to iOS 15.0.
+- Updates the example apps to the UIScene lifecycle.
+
 Version 0.1.7 (17 April, 2024)
 -----------------------------------------------
 - Fixes a build error related to privacy manifests when statically linking the SDK using Cocoapods.
