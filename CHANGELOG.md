@@ -1,5 +1,9 @@
 Change Log
 ==========
+Unreleased
+-----------------------------------------------
+- Adds a CocoaPods sunset notice to the podspec and README. CocoaPods trunk becomes read-only on December 2, 2026. Add `source 'https://github.com/CleverTap/podspecs.git'` and `source 'https://cdn.cocoapods.org/'` to the top of your Podfile to keep receiving updates. Existing installs are unaffected.
+
 Version 0.1.7 (17 April, 2024)
 -----------------------------------------------
 - Fixes a build error related to privacy manifests when statically linking the SDK using Cocoapods.

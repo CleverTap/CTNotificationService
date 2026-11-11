@@ -28,13 +28,33 @@ A simple Notification Service Extension class to add media attachments to iOS 10
 
 ## 🎉 Installation
 
+> **CocoaPods users:** CocoaPods trunk becomes read-only on December 2, 2026. Add these two
+> lines to the top of your Podfile to keep receiving CleverTap updates:
+>
+> ```ruby
+> source 'https://github.com/CleverTap/podspecs.git'
+> source 'https://cdn.cocoapods.org/'
+> ```
+>
+> Existing installs keep working with no change. See the [CleverTap podspecs repo](https://github.com/CleverTap/podspecs) for details.
+
+### Swift Package Manager (recommended)
+
+Swift Package Manager is an Xcode tool that installs project dependencies. To use it to install CTNotificationService SDK, follow these steps:
+
+- In Xcode, navigate to **File -> Swift Package Manager -> Add Package Dependency.**
+- Enter **https://github.com/CleverTap/CTNotificationService.git** when choosing package repo and Click **Next.**
+- On the next screen, Select an SDK version (by default, Xcode selects the latest stable version). Click **Next.**
+- Click **Finish** and ensure that the **CTNotificationService** has been added to the appropriate target.
+
 ### CocoaPods
 
 Install `CTNotificationService` in your Notification Service Extension via [CocoaPods](http://cocoapods.org)
 
 Your `Podfile` should look something like this:
 
-    source 'https://github.com/CocoaPods/Specs.git'
+    source 'https://github.com/CleverTap/podspecs.git'
+    source 'https://cdn.cocoapods.org/'
     platform :ios, '10.0'
 
     use_frameworks!
@@ -43,7 +63,7 @@ Your `Podfile` should look something like this:
         pod 'CTNotificationService'  
     end     
 
-Then run `pod install`.
+Then run `pod install --repo-update`.
 
 [See example Podfile here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/Podfile).
 
@@ -58,15 +78,6 @@ github "CleverTap/CTNotificationService"
 ```
 
 Run `carthage update` to build the framework and drag the built `CTNotificationService.framework` into your Xcode project.
-
-### Swift Package Manager
-
-Swift Package Manager is an Xcode tool that installs project dependencies. To use it to install CTNotificationService SDK, follow these steps:
-
-- In Xcode, navigate to **File -> Swift Package Manager -> Add Package Dependency.**
-- Enter **https://github.com/CleverTap/CTNotificationService.git** when choosing package repo and Click **Next.**
-- On the next screen, Select an SDK version (by default, Xcode selects the latest stable version). Click **Next.**
-- Click **Finish** and ensure that the **CTNotificationService** has been added to the appropriate target.
 
 ## 🚀 Integration
 
