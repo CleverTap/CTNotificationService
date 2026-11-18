@@ -1,6 +1,6 @@
 Change Log
 ==========
-Version 0.1.8 (11 November, 2026)
+Version 1.0.0 (11 November, 2026)
 -----------------------------------------------
 - The SDK builds with Xcode 27 and runs on iOS 27.
 - Raises the minimum supported deployment target to iOS 15.0.
