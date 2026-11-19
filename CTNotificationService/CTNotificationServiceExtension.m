@@ -1,5 +1,10 @@
 
 #import "CTNotificationServiceExtension.h"
+#import <objc/runtime.h>
+
+static NSString * const kCTNotificationServiceSdkName = @"CTNotificationService";
+// major * 10000 + minor * 100 + patch, the format CleverTap Core SDK expects. Keep in sync with s.version.
+static int const kCTNotificationServiceVersion = 10000;
 
 static NSString * const kMediaUrlKey = @"ct_mediaUrl";
 static NSString * const kMediaTypeKey = @"ct_mediaType";
@@ -66,6 +71,26 @@ static NSString * const kImageGif = @"image/gif";
 
 - (void)serviceExtensionTimeWillExpire {
     self.contentHandler(self.bestAttemptContent);
+}
+
+// Runs once when the library loads, before any host code.
++ (void)load {
+    [self registerSdkVersionWithCleverTapCore];
+}
+
+// setCustomSdkVersion only sets a static, so it is called with nil self.
+// sharedInstance would create an instance and lock in the Info.plist account.
++ (void)registerSdkVersionWithCleverTapCore {
+    Class cleverTapClass = NSClassFromString(@"CleverTap");
+    if (!cleverTapClass) {
+        return;
+    }
+    Method method = class_getInstanceMethod(cleverTapClass, NSSelectorFromString(@"setCustomSdkVersion:version:"));
+    if (!method) {
+        return;
+    }
+    void (*setCustomSdkVersion)(id, SEL, NSString *, int) = (void (*)(id, SEL, NSString *, int))method_getImplementation(method);
+    setCustomSdkVersion(nil, method_getName(method), kCTNotificationServiceSdkName, kCTNotificationServiceVersion);
 }
 
 - (NSString *)fileExtensionForMediaType:(NSString *)mediaType mimeType:(NSString *)mimeType {
