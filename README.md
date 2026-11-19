@@ -10,7 +10,7 @@
 
 ## 👋 Introduction
 
-A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications. Starting with iOS 10 you can add media attachments (image, gif, video, audio) to iOS push notifications. This library provides a simple drop-in class to accomplish that.
+A simple Notification Service Extension class to add media attachments to iOS 15 rich push notifications. Starting with iOS 10 you can add media attachments (image, gif, video, audio) to iOS push notifications. This library provides a simple drop-in class to accomplish that.
 
 [Rich push notifications](https://developer.apple.com/videos/play/wwdc2016/708/) are enabled in iOS 10 via a [Notification Service Extension](https://developer.apple.com/reference/usernotifications/unnotificationserviceextension), a separate and distinct binary embedded in your app bundle.
 

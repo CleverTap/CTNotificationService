@@ -39,8 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
 // MARK: - UIScene lifecycle
 //
-// iOS 26 (Xcode 27 SDK) makes the UIScene lifecycle mandatory; the window is created here
-// so the app launches on iOS 26/27 instead of crashing. See Info.plist > UIApplicationSceneManifest.
+// Apps built with the Xcode 27 SDK must adopt the UIScene lifecycle; the window is created here
+// so the app launches on iOS 27 instead of crashing. See Info.plist > UIApplicationSceneManifest.
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?

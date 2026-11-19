@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "CTNotificationService"
   s.version          = "1.0.0"
-  s.summary          = "A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications."
+  s.summary          = "A simple Notification Service Extension class to add media attachments to iOS 15 rich push notifications."
   s.description      = <<-DESC
-                       A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications.
+                       A simple Notification Service Extension class to add media attachments to iOS 15 rich push notifications.
 
                        NOTICE: CocoaPods trunk becomes read-only on December 2, 2026. To keep
                        receiving CleverTap updates through CocoaPods, add these lines to your Podfile:
