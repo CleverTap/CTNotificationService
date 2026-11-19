@@ -6,7 +6,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
 [![Platform](https://img.shields.io/cocoapods/p/CTNotificationService.svg?style=flat)](http://cocoapods.org/pods/CTNotificationService)
-![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-blue.svg)
+![iOS 15.0+](https://img.shields.io/badge/iOS-15.0%2B-blue.svg)
 
 ## 👋 Introduction
 
@@ -16,7 +16,9 @@ A simple Notification Service Extension class to add media attachments to iOS 10
 
 ## 📋 Requirements
 
-1. Compatible with iOS version 10.0 or above
+> **Note:** Starting with version 2.0.0, the minimum supported deployment target is iOS 15.0, and apps built with the Xcode 27 SDK must adopt the UIScene lifecycle. See the [Xcode 27 / iOS 27 Support guide](https://github.com/CleverTap/clevertap-ios-sdk/blob/master/docs/iOS27Support.md) in the CleverTap iOS SDK repo for the CocoaPods `post_install` snippet and the UIScene migration steps.
+
+1. Compatible with iOS version 15.0 or above
 
 2. Configure your app for Push and add a Notification Service Extension target
 
@@ -28,14 +30,34 @@ A simple Notification Service Extension class to add media attachments to iOS 10
 
 ## 🎉 Installation
 
+> **CocoaPods users:** CocoaPods trunk becomes read-only on December 2, 2026. Add these two
+> lines to the top of your Podfile to keep receiving CleverTap updates:
+>
+> ```ruby
+> source 'https://github.com/CleverTap/podspecs.git'
+> source 'https://cdn.cocoapods.org/'
+> ```
+>
+> Existing installs keep working with no change. See the [CleverTap podspecs repo](https://github.com/CleverTap/podspecs) for details.
+
+### Swift Package Manager (recommended)
+
+Swift Package Manager is an Xcode tool that installs project dependencies. To use it to install CTNotificationService SDK, follow these steps:
+
+- In Xcode, navigate to **File -> Swift Package Manager -> Add Package Dependency.**
+- Enter **https://github.com/CleverTap/CTNotificationService.git** when choosing package repo and Click **Next.**
+- On the next screen, Select an SDK version (by default, Xcode selects the latest stable version). Click **Next.**
+- Click **Finish** and ensure that the **CTNotificationService** has been added to the appropriate target.
+
 ### CocoaPods
 
 Install `CTNotificationService` in your Notification Service Extension via [CocoaPods](http://cocoapods.org)
 
 Your `Podfile` should look something like this:
 
-    source 'https://github.com/CocoaPods/Specs.git'
-    platform :ios, '10.0'
+    source 'https://github.com/CleverTap/podspecs.git'
+    source 'https://cdn.cocoapods.org/'
+    platform :ios, '15.0'
 
     use_frameworks!
 
@@ -43,7 +65,7 @@ Your `Podfile` should look something like this:
         pod 'CTNotificationService'  
     end     
 
-Then run `pod install`.
+Then run `pod install --repo-update`.
 
 [See example Podfile here](https://github.com/CleverTap/CTNotificationService/blob/master/Example/Podfile).
 
@@ -58,15 +80,6 @@ github "CleverTap/CTNotificationService"
 ```
 
 Run `carthage update` to build the framework and drag the built `CTNotificationService.framework` into your Xcode project.
-
-### Swift Package Manager
-
-Swift Package Manager is an Xcode tool that installs project dependencies. To use it to install CTNotificationService SDK, follow these steps:
-
-- In Xcode, navigate to **File -> Swift Package Manager -> Add Package Dependency.**
-- Enter **https://github.com/CleverTap/CTNotificationService.git** when choosing package repo and Click **Next.**
-- On the next screen, Select an SDK version (by default, Xcode selects the latest stable version). Click **Next.**
-- Click **Finish** and ensure that the **CTNotificationService** has been added to the appropriate target.
 
 ## 🚀 Integration
 
