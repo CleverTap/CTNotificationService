@@ -3,8 +3,8 @@
 #import <objc/runtime.h>
 
 static NSString * const kCTNotificationServiceSdkName = @"CTNotificationService";
-// Version 0.1.8 as major * 10000 + minor * 100 + patch, the format CleverTap Core SDK expects.
-static int const kCTNotificationServiceVersion = 108;
+// major * 10000 + minor * 100 + patch, the format CleverTap Core SDK expects. Keep in sync with s.version.
+static int const kCTNotificationServiceVersion = 10000;
 
 static NSString * const kMediaUrlKey = @"ct_mediaUrl";
 static NSString * const kMediaTypeKey = @"ct_mediaType";
