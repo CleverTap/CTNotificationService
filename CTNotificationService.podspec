@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CTNotificationService"
-  s.version          = "2.0.0"
+  s.version          = "1.0.0"
   s.summary          = "A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications."
   s.description      = <<-DESC
                        A simple Notification Service Extension class to add media attachments to iOS 10 rich push notifications.
